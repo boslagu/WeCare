@@ -29,7 +29,7 @@ import java.util.List;
 public class Learning extends AppCompatActivity {
 
     ListView lstLearningHerbal, lstLearningDisease;
-    DiseasesDbHelper diseasesDbHelper;
+    LearningDbHelper learningDbHelper;
     HerbalDbHelper herbalDbHelper;
     CustomAdapter adapter;
     ArrayList<String> herbalTitles;
@@ -56,7 +56,7 @@ public class Learning extends AppCompatActivity {
         dataBaseHelper = new DataBaseHelper(this);
         lstLearningHerbal = (ListView) findViewById(R.id.lstLearningHerbal);
         lstLearningDisease = (ListView) findViewById(R.id.lstLearningDisease);
-        diseasesDbHelper = new DiseasesDbHelper(this);
+        learningDbHelper = new LearningDbHelper(this);
         herbalDbHelper = new HerbalDbHelper(this);
 
         herbalTitles = new ArrayList<>();
@@ -179,16 +179,16 @@ public class Learning extends AppCompatActivity {
 
         try {
 
-                diseasesDbHelper.createDataBase();
-                diseasesDbHelper.openDataBase();
+            learningDbHelper.createDataBase();
+            learningDbHelper.openDataBase();
 
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
 
-            SQLiteDatabase myDiseaseDbHelper = diseasesDbHelper.getReadableDatabase();
-            Cursor cursor1 = myDiseaseDbHelper.query("tbl_Diseases", null, null, null, null, null, null);
+            SQLiteDatabase myDiseaseDbHelper = learningDbHelper.getReadableDatabase();
+            Cursor cursor1 = myDiseaseDbHelper.query("tbl_Learning", null, null, null, null, null, null);
 
             while (cursor1.moveToNext()) {
                 diseaseTitles.add(cursor1.getString(cursor1.getColumnIndex("diseaseName")));

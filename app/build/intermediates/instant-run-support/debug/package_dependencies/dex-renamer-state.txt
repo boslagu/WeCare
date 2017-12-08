@@ -1,4 +1,4 @@
-#Fri Nov 24 21:37:27 CST 2017
+#Fri Dec 08 22:53:13 CST 2017
 file.2=C\:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ad00e99455d9778435fbfb61f53a92c37af9095e\\classes.dex
 base.2=C\:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ad00e99455d9778435fbfb61f53a92c37af9095e
 file.1=C\:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\constraint-layout-solver-1.0.2_286a1ee62b8a2abe6539fe522fa2c71d90caba1f\\classes.dex

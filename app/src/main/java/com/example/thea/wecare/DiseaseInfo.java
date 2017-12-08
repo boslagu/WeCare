@@ -26,7 +26,7 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
     TextView txtDiseaseLearning, txtDescriptionLearning, txtCheckerLearning;
     String itemTitle;
     private TextToSpeech tts;
-    HerbalDbHelper herbalDbHelper;
+    LearningDbHelper learningDbHelper;
     BookmarkDatabaseHelper bookmarkDatabaseHelper;
     ImageView imgViewDiseaseInfo1, imgViewDiseaseInfo2, imgViewDiseaseInfo3;
 
@@ -41,7 +41,7 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
 
         //****************************************************************************Initialization
         txtCheckerLearning = (TextView) findViewById(R.id.txtCheckerLearning);
-        herbalDbHelper = new HerbalDbHelper(this);
+        learningDbHelper = new LearningDbHelper(this);
         bookmarkDatabaseHelper = new BookmarkDatabaseHelper(this);
         tts = new TextToSpeech(this, this);
 
@@ -140,22 +140,22 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
 
 
     public void fetchData() {
-        herbalDbHelper = new HerbalDbHelper(this);
+        learningDbHelper = new LearningDbHelper(this);
         try {
 
-            herbalDbHelper.createDataBase();
-            herbalDbHelper.openDataBase();
+            learningDbHelper.createDataBase();
+            learningDbHelper.openDataBase();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        SQLiteDatabase sd = herbalDbHelper.getReadableDatabase();
-        Cursor cursor = sd.query("tbl_Herbal" ,null, null, null, null, null, null);
+        SQLiteDatabase sd = learningDbHelper.getReadableDatabase();
+        Cursor cursor = sd.query("tbl_Learning" ,null, null, null, null, null, null);
         while (cursor.moveToNext()) {
             txtCheckerLearning.setText(cursor.getString(cursor.getColumnIndex("diseaseName")));
             if (txtCheckerLearning.getText().toString().toUpperCase().equals(txtDiseaseLearning.getText().toString().toUpperCase())) {
-                txtDescriptionLearning.setText(cursor.getString(cursor.getColumnIndex("diseaseDescription")));
+                txtDescriptionLearning.setText(cursor.getString(cursor.getColumnIndex("description")));
             }
         }
     }
