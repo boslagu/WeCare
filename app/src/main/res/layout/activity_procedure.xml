@@ -44,6 +44,7 @@
                 android:id="@+id/txtDaysProcedure"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:text="TextView" />
 
             <LinearLayout
@@ -72,6 +73,81 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/Hereditary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hereditary"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtHereditary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Disease Description"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/cause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cause"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtcause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Disease Description"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/looklike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Look Like"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtlooklike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Disease Description"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/diagnosed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diagnosed"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtDiagnosed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Disease Description"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Symptoms"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtSymptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Disease Description"
+                    android:textSize="14dp" />
+
+                <TextView
                     android:id="@+id/txtHerbalName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -79,16 +155,6 @@
                     android:hint="Herbal Name"
                     android:textColor="#2762be"
                     android:textSize="22dp" />
-
-                <TextView
-                    android:id="@+id/txtHerbalSciName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:hint="Hernal Scientific Name"
-                    android:textColor="#000000"
-                    android:textSize="18dp"
-                    android:textStyle="italic" />
 
                 <TextView
                     android:id="@+id/txtHerbalDescription"
@@ -127,8 +193,50 @@
                     android:background="#eff5f8"
                     android:onClick="btnConfirmDisease"
                     android:text="Monitor"
+                    android:visibility="gone"
                     android:textColor="#000000"
                     android:textSize="20sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/progressBar1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="21dp"
+                    android:text="ToggleButton"
+                    android:textOff="Click to confirm"
+                    android:textOn="Click to confirm" />
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBar1"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:layout_marginTop="47dp" />
+
+                <TextView
+                    android:id="@+id/questionLoadertxt"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp" />
+
             </LinearLayout>
 
 

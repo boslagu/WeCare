@@ -7,6 +7,10 @@
     <uses-sdk
         android:minSdkVersion="19"
         android:targetSdkVersion="25" />
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <meta-data
         android:name="android.support.VERSION"
@@ -68,6 +72,7 @@
             android:label="Learning" />
         <activity android:name="com.example.thea.wecare.ViewUserDisease" />
         <activity android:name="com.example.thea.wecare.Procedure" />
+        <activity android:name="com.example.thea.wecare.ConfirmationActivity" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

@@ -4,16 +4,8 @@
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_icon.png"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_icon.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_icon.png"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_delete.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_delete.png"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
@@ -22,13 +14,5 @@
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_delete.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_delete.png"
-    },
-    {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
 ]

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:2:1-63:12
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:2:1-75:12
 	package
 		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml
@@ -13,137 +13,8 @@ ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:2:1-63
 	android:versionCode
 		INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml
-application
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:5:5-61:19
-MERGED from [com.android.support:design:25.3.1] C:\Users\Tottie\.android\build-cache\9509d2b1b693fceabe2e8ddca08fc17001edbe70\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Tottie\.android\build-cache\f3500fc9676e92056c09debf8d3b90064c07d9dd\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Tottie\.android\build-cache\096ed1654810d2d8213ca0b4927bdb9671dcb2bd\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Tottie\.android\build-cache\d3792c6cd2f7245bf4cf7f890d98a81175094b16\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Tottie\.android\build-cache\913328301516da0ddc959efe47e910aaffac160c\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Tottie\.android\build-cache\8dc808db4e055c6be648eace8721557d5c3372b7\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Tottie\.android\build-cache\f4807124bcf096097b74511ef07e56990e6b0dab\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Tottie\.android\build-cache\a35ed4e0f11f25556bfc936d747e813b73469cc7\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Tottie\.android\build-cache\e075d16c472fac242169939cf938443d56c99a86\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Tottie\.android\build-cache\3c1c6d39da8dfd07b07c07eb7e382e6fb4076153\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Tottie\.android\build-cache\e3de9c0f957130a168423a836b01ad7cd20d05d3\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Tottie\.android\build-cache\c96d251a43fe9a6fa05945db49800f6203d4a3b1\output\AndroidManifest.xml:9:5-20
-MERGED from [com.github.clans:fab:1.6.2] C:\Users\Tottie\.android\build-cache\6750f2c99b5887eeba7ac6d0ee12e42be4fa2d95\output\AndroidManifest.xml:12:5-20
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:8:9-41
-	android:supportsRtl
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:10:9-35
-	android:roundIcon
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:9:9-54
-	android:allowBackup
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:6:9-35
-	android:icon
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:7:9-43
-	android:theme
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.example.thea.wecare.Home
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:12:9-21:20
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:14:13-45
-	android:theme
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:15:13-56
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:13:13-33
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:16:13-20:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:17:17-69
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:17:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:19:17-77
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.example.thea.wecare.Consult
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:22:9-24:39
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:24:13-36
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:23:13-36
-activity#com.example.thea.wecare.Body
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:25:9-42
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:25:19-39
-activity#com.example.thea.wecare.BodyProcedure
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:26:9-28:39
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:28:13-36
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:27:13-42
-activity#com.example.thea.wecare.Learning
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:29:9-31:40
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:31:13-37
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:30:13-37
-activity#com.example.thea.wecare.Herbal
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:32:9-34:38
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:34:13-35
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:33:13-35
-activity#com.example.thea.wecare.Monitoring
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:35:9-37:42
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:37:13-39
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:36:13-39
-activity#com.example.thea.wecare.BookMark
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:38:9-40:40
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:40:13-37
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:39:13-37
-activity#com.example.thea.wecare.TermofUse
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:41:9-43:43
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:43:13-40
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:42:13-38
-activity#com.example.thea.wecare.AboutUs
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:44:9-46:40
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:46:13-37
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:45:13-36
-activity#com.example.thea.wecare.SignUp
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:47:9-49:38
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:49:13-35
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:48:13-35
-activity#com.example.thea.wecare.HerbalInfo
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:50:9-52:40
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:52:13-37
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:51:13-39
-activity#com.example.thea.wecare.BookmarkItem
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:53:9-55:40
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:55:13-37
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:54:13-41
-activity#com.example.thea.wecare.DiseaseInfo
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:56:9-58:40
-	android:label
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:58:13-37
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:57:13-40
-activity#com.example.thea.wecare.ViewUserDisease
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:59:9-53
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:59:19-50
-activity#com.example.thea.wecare.Procedure
-ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:60:9-56
-	android:name
-		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:60:19-44
 uses-sdk
-INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:25.3.1] C:\Users\Tottie\.android\build-cache\9509d2b1b693fceabe2e8ddca08fc17001edbe70\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Tottie\.android\build-cache\f3500fc9676e92056c09debf8d3b90064c07d9dd\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Tottie\.android\build-cache\096ed1654810d2d8213ca0b4927bdb9671dcb2bd\output\AndroidManifest.xml:20:5-44
@@ -161,11 +32,154 @@ MERGED from [com.github.clans:fab:1.6.2] C:\Users\Tottie\.android\build-cache\67
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\Tottie\.android\build-cache\9509d2b1b693fceabe2e8ddca08fc17001edbe70\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:8:9-34
 		INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:11:5-70
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:11:22-68
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:12:22-64
+application
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:16:5-73:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Tottie\.android\build-cache\9509d2b1b693fceabe2e8ddca08fc17001edbe70\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Tottie\.android\build-cache\f3500fc9676e92056c09debf8d3b90064c07d9dd\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Tottie\.android\build-cache\096ed1654810d2d8213ca0b4927bdb9671dcb2bd\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Tottie\.android\build-cache\d3792c6cd2f7245bf4cf7f890d98a81175094b16\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Tottie\.android\build-cache\913328301516da0ddc959efe47e910aaffac160c\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Tottie\.android\build-cache\8dc808db4e055c6be648eace8721557d5c3372b7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Tottie\.android\build-cache\f4807124bcf096097b74511ef07e56990e6b0dab\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Tottie\.android\build-cache\a35ed4e0f11f25556bfc936d747e813b73469cc7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Tottie\.android\build-cache\e075d16c472fac242169939cf938443d56c99a86\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Tottie\.android\build-cache\3c1c6d39da8dfd07b07c07eb7e382e6fb4076153\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Tottie\.android\build-cache\e3de9c0f957130a168423a836b01ad7cd20d05d3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Tottie\.android\build-cache\c96d251a43fe9a6fa05945db49800f6203d4a3b1\output\AndroidManifest.xml:9:5-20
+MERGED from [com.github.clans:fab:1.6.2] C:\Users\Tottie\.android\build-cache\6750f2c99b5887eeba7ac6d0ee12e42be4fa2d95\output\AndroidManifest.xml:12:5-20
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:19:9-41
+	android:supportsRtl
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:21:9-35
+	android:roundIcon
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:20:9-54
+	android:allowBackup
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:17:9-35
+	android:icon
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:18:9-43
+	android:theme
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:22:9-40
+activity#com.example.thea.wecare.Home
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:23:9-32:20
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:25:13-45
+	android:theme
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:24:13-33
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:30:27-74
+activity#com.example.thea.wecare.Consult
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:33:9-35:39
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:34:13-36
+activity#com.example.thea.wecare.Body
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:36:9-42
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:36:19-39
+activity#com.example.thea.wecare.BodyProcedure
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:37:9-39:39
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:38:13-42
+activity#com.example.thea.wecare.Learning
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:40:9-42:40
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:41:13-37
+activity#com.example.thea.wecare.Herbal
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:43:9-45:38
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:45:13-35
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:44:13-35
+activity#com.example.thea.wecare.Monitoring
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:46:9-48:42
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:48:13-39
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:47:13-39
+activity#com.example.thea.wecare.BookMark
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:49:9-51:40
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:51:13-37
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:50:13-37
+activity#com.example.thea.wecare.TermofUse
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:52:9-54:43
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:54:13-40
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:53:13-38
+activity#com.example.thea.wecare.AboutUs
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:55:9-57:40
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:57:13-37
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:56:13-36
+activity#com.example.thea.wecare.SignUp
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:58:9-60:38
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:60:13-35
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:59:13-35
+activity#com.example.thea.wecare.HerbalInfo
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:61:9-63:40
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:63:13-37
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:62:13-39
+activity#com.example.thea.wecare.BookmarkItem
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:64:9-66:40
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:66:13-37
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:65:13-41
+activity#com.example.thea.wecare.DiseaseInfo
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:67:9-69:40
+	android:label
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:69:13-37
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:68:13-40
+activity#com.example.thea.wecare.ViewUserDisease
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:70:9-53
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:70:19-50
+activity#com.example.thea.wecare.Procedure
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:71:9-47
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:71:19-44
+activity#com.example.thea.wecare.ConfirmationActivity
+ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:72:9-67
+	android:name
+		ADDED from C:\Users\Tottie\Videos\WeCare\app\src\main\AndroidManifest.xml:72:19-55
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\Tottie\.android\build-cache\9509d2b1b693fceabe2e8ddca08fc17001edbe70\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Tottie\.android\build-cache\f3500fc9676e92056c09debf8d3b90064c07d9dd\output\AndroidManifest.xml:25:5-27:34

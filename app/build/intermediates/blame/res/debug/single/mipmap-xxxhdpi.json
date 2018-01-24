@@ -1,31 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\icon.png"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_icon.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_icon.png"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_delete.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_delete.png"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_icon.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\received_1621430231253258.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\received_1621430231253258.png"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\icon.png",
@@ -38,10 +18,6 @@
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\received_1621430231253258.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\received_1621430231253258.png"
-    },
-    {
-        "merged": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
-        "source": "C:\\Users\\Tottie\\Music\\wecareasu\\New folder\\WeCare\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
