@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+        android:maxSdkVersion="23" />
 
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.INTERNET" />
@@ -60,13 +60,13 @@
             android:label="SignUp" />
         <activity
             android:name=".HerbalInfo"
-            android:label="BookMark" />
+            android:label="Herbal" />
         <activity
             android:name=".BookmarkItem"
             android:label="BookMark" />
         <activity
             android:name=".DiseaseInfo"
-            android:label="Learning" />
+            android:label="Disease" />
         <activity android:name=".ViewUserDisease" />
         <activity android:name=".Procedure" />
         <activity android:name=".ConfirmationActivity"></activity>

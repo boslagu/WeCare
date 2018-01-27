@@ -23,7 +23,8 @@ import android.widget.TextView;
 public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
 
-    TextView txtDiseaseLearning, txtDescriptionLearning, txtCheckerLearning;
+    TextView txtDiseaseLearning, txtDescriptionLearning, txtCheckerLearning, txtHereditaryL, txtcauseL, txtlooklikeL, txtDiagnosedL,
+    txtCureL, txtSymptomsL, txtTreatmentL, txtAvoidL;
     String itemTitle;
     private TextToSpeech tts;
     LearningDbHelper learningDbHelper;
@@ -41,6 +42,14 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
 
         //****************************************************************************Initialization
         txtCheckerLearning = (TextView) findViewById(R.id.txtCheckerLearning);
+        txtHereditaryL = (TextView) findViewById(R.id.txtHereditaryL);
+        txtcauseL = (TextView) findViewById(R.id.txtcauseL);
+        txtlooklikeL = (TextView) findViewById(R.id.txtlooklikeL);
+        txtDiagnosedL = (TextView) findViewById(R.id.txtDiagnosedL);
+        txtCureL = (TextView) findViewById(R.id.txtCureL);
+        txtSymptomsL = (TextView) findViewById(R.id.txtSymptomsL);
+        txtTreatmentL = (TextView) findViewById(R.id.txtTreatmentL);
+        txtAvoidL = (TextView) findViewById(R.id.txtAvoidL);
         learningDbHelper = new LearningDbHelper(this);
         bookmarkDatabaseHelper = new BookmarkDatabaseHelper(this);
         tts = new TextToSpeech(this, this);
@@ -156,6 +165,15 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
             txtCheckerLearning.setText(cursor.getString(cursor.getColumnIndex("diseaseName")));
             if (txtCheckerLearning.getText().toString().toUpperCase().equals(txtDiseaseLearning.getText().toString().toUpperCase())) {
                 txtDescriptionLearning.setText(cursor.getString(cursor.getColumnIndex("description")));
+
+                txtHereditaryL.setText(cursor.getString(cursor.getColumnIndex("hereditary")));
+                txtcauseL.setText(cursor.getString(cursor.getColumnIndex("cuase")));
+                txtlooklikeL.setText(cursor.getString(cursor.getColumnIndex("looklike")));
+                txtDiagnosedL.setText(cursor.getString(cursor.getColumnIndex("diagnosed")));
+                txtCureL.setText(cursor.getString(cursor.getColumnIndex("cured")));
+                txtSymptomsL.setText(cursor.getString(cursor.getColumnIndex("symptoms")));
+                txtTreatmentL.setText(cursor.getString(cursor.getColumnIndex("treatments")));
+                txtAvoidL.setText(cursor.getString(cursor.getColumnIndex("Avoid")));
             }
         }
     }

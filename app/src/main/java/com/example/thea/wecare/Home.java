@@ -51,9 +51,18 @@ public class Home extends AppCompatActivity
         myDb = new DataBaseHelper(this);
         layoutMale = (LinearLayout) findViewById(R.id.layoutMale);
         layoutFemale = (LinearLayout) findViewById(R.id.layoutFemale);
+
+        tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.ERROR){
+                    tts.setLanguage(Locale.getDefault());
+                    tts.speak("Hello!. I am, Teya. . . how can i help you?. . ", TextToSpeech.QUEUE_ADD, null, null);
+                }
+            }
+        });
         tts = new TextToSpeech(this, this);
 
-        speakOutNow("try");
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -73,7 +82,7 @@ public class Home extends AppCompatActivity
             int language = tts.setLanguage(Locale.ENGLISH);
             if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED) {
 
-                    speakOutNow("Hello!. I am, Teya. . . how can i help you?. . ");
+//                    speakOutNow("Hello!. I am, Teya. . . how can i help you?. . ");
                             //"click consult to consult your your problem. learning if you want to learn something about herbals and diseases. herbal for the information of herbals that you need. click monitoring to reconsult.");
 
             }
@@ -90,7 +99,6 @@ public class Home extends AppCompatActivity
     //**********************************************************************************
     private void speakOutNow (String text) {
         tts.speak(text, TextToSpeech.QUEUE_FLUSH,null);
-
     }
 
 

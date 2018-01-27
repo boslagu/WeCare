@@ -14,6 +14,8 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -70,6 +72,9 @@ private TextToSpeech tts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_procedure);
 
 
@@ -183,7 +188,8 @@ private TextToSpeech tts;
             }
         }else if (questionNumber == 2){
             if (keyWord.equals("next")) {
-                questionLoaderTxt.setText("I thought you are finished with that, haven't you?");
+                questionLoaderTxt.setText("Read and do the procedure until the given time, and get back to me after your " +
+                        "medication.");
 //                SAVE DISEASE TO DATABASE THEN GO TO MONITORING
                 dialogYes();
             }
@@ -213,6 +219,7 @@ private TextToSpeech tts;
                     if (arrAnswer[arrPostition].equals("not") || arrAnswer[arrPostition].equals("no")) {
                         done = true;
                         keyWord = "not";
+                        speakOutNow("Please read the information again and confirm if this is what you are experiencing");
                         foundKeyWord = true;
                     } else {
                         if (arrAnswer[arrPostition].equals("yes") || arrAnswer[arrPostition].equals("yeah")) {
@@ -229,21 +236,58 @@ private TextToSpeech tts;
 
             if (keyWord.equals("yes")) {
                 do {
+
+
                     if (arrPostition == arrAnswer.length) {
                         done = true;
                     } else {
-                        if (arrAnswer[arrPostition].equals("7") || arrAnswer[arrPostition].equals("weeks")
-                                || arrAnswer[arrPostition].equals("week")) {
+                        if (arrAnswer[arrPostition].equals("7")) {
                             done = true;
                             foundKeyWord = true;
-                            keyWord = "none";
-                        } else {
-                            if (arrAnswer[arrPostition].equals("less")) {
-                                done = true;
-                                saveDisease = true;
-                                foundKeyWord = true;
-                                keyWord = "next";
-                            }
+                            speakOutNow("sorry to say that we can't help you, because have your disease for too long. " +
+                                    "you might need to consult for skin experts");
+                        } else if (arrAnswer[arrPostition].equals("week")){
+
+                            int newPosition = 0;
+                            do {
+                                if (arrAnswer[newPosition].equals("less")) {
+                                    done = true;
+                                    saveDisease = true;
+                                    foundKeyWord = true;
+                                    keyWord = "next";
+                                }
+                                newPosition++;
+                            }while (newPosition != arrAnswer.length);
+
+                        } else if (arrAnswer[arrPostition].equals("weeks") || arrAnswer[arrPostition].equals("month")
+                                || arrAnswer[arrPostition].equals("months") || arrAnswer[arrPostition].equals("year")
+                                || arrAnswer[arrPostition].equals("years")) {
+                            done = true;
+                            foundKeyWord = true;
+                            speakOutNow("sorry to say that we can't help you, because have your disease for too long. " +
+                                    "you might need to consult for skin experts");
+                        } else if (arrAnswer[arrPostition].equals("day") || arrAnswer[arrPostition].equals("days")){
+
+                            int newPosition = 0;
+                            do {
+                                if (arrAnswer[newPosition].equals("1") || arrAnswer[newPosition].equals("2")
+                                        || arrAnswer[newPosition].equals("3") || arrAnswer[newPosition].equals("4")
+                                        || arrAnswer[newPosition].equals("5") || arrAnswer[newPosition].equals("6")) {
+                                    done = true;
+                                    saveDisease = true;
+                                    foundKeyWord = true;
+                                    keyWord = "next";
+                                } else if (arrAnswer[newPosition].equals("7") || arrAnswer[newPosition].equals("8")
+                                        || arrAnswer[newPosition].equals("9") || arrAnswer[newPosition].equals("10")
+                                        || arrAnswer[newPosition].equals("11") || arrAnswer[newPosition].equals("12")){
+                                    done = true;
+                                    foundKeyWord = true;
+                                    speakOutNow("sorry to say that we can't help you, because have your disease for too long. " +
+                                            "you might need to consult for skin experts");
+                                }
+                                newPosition++;
+                            }while (newPosition != arrAnswer.length);
+
                         }
                     }
                     arrPostition++;
@@ -256,15 +300,15 @@ private TextToSpeech tts;
             //do nothing
             toastThis(keyWord);
         } else {
-            speakOutNow("Please answer the question right. click the button to continue, or press back to go to" +
+            speakOutNow("Please answer the question right. click the button to continue, or press back to get back to" +
                     "consult");
             questionNumber = questionNumber - 1;
         }
 
         if (keyWord == "next"){
 //            SAVE  TO DATABASE
-            speakOutNow("follow the instruction until the given time, then get back to me after the medication and or" +
-                    "there's something went wrong.");
+            speakOutNow("follow the instruction until the given time, then get back to me after the medication and if" +
+                    " there's something went wrong.");
             dialogYes();
         }
 //        IF MUST PROCEED TO SAVE THE DISEASE
@@ -412,7 +456,6 @@ private TextToSpeech tts;
     }
     private void speakOutNow (String text) {
         tts.speak(text, TextToSpeech.QUEUE_FLUSH,null);
-
     }
 
     //

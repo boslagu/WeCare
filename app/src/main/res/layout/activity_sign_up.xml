@@ -170,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Weight"
+                    android:hint="Weight KG"
                     android:inputType="date" />
 
                 <EditText
@@ -179,7 +179,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Height"
+                    android:hint="Height CM"
                     android:inputType="date" />
 
             </LinearLayout>

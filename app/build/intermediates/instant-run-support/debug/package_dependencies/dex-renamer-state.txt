@@ -1,4 +1,4 @@
-#Fri Jan 19 23:42:20 CST 2018
+#Sat Jan 27 23:38:24 CST 2018
 file.2=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_cdc8c87c809b39f070addc5a4fc4a10129dc6697\\classes.dex
 base.2=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_cdc8c87c809b39f070addc5a4fc4a10129dc6697
 file.1=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_3cec61755e79e11ef976ab2e720a21e48b7a0413\\classes.dex

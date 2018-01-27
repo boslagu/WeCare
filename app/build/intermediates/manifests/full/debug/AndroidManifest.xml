@@ -5,6 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
+        android:maxSdkVersion="23"
         android:minSdkVersion="19"
         android:targetSdkVersion="25" />
     android:versionCode="1"
@@ -63,13 +64,13 @@
             android:label="SignUp" />
         <activity
             android:name="com.example.thea.wecare.HerbalInfo"
-            android:label="BookMark" />
+            android:label="Herbal" />
         <activity
             android:name="com.example.thea.wecare.BookmarkItem"
             android:label="BookMark" />
         <activity
             android:name="com.example.thea.wecare.DiseaseInfo"
-            android:label="Learning" />
+            android:label="Disease" />
         <activity android:name="com.example.thea.wecare.ViewUserDisease" />
         <activity android:name="com.example.thea.wecare.Procedure" />
         <activity android:name="com.example.thea.wecare.ConfirmationActivity" />

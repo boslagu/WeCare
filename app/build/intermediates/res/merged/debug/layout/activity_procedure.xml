@@ -73,6 +73,12 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+
+                <TextView
                     android:id="@+id/Hereditary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -86,6 +92,12 @@
                     android:layout_height="wrap_content"
                     android:hint="Disease Description"
                     android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/cause"
@@ -103,6 +115,12 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+
+                <TextView
                     android:id="@+id/looklike"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -116,6 +134,12 @@
                     android:layout_height="wrap_content"
                     android:hint="Disease Description"
                     android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/diagnosed"
@@ -133,6 +157,12 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+
+                <TextView
                     android:id="@+id/symptoms"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -146,6 +176,12 @@
                     android:layout_height="wrap_content"
                     android:hint="Disease Description"
                     android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/txtHerbalName"

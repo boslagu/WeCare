@@ -102,7 +102,7 @@
                     fab:menu_labels_textColor="#088dd5"
                     fab:menu_labels_textSize="18dp"
                     fab:menu_openDirection="up"
-                    fab:menu_shadowColor="#088dd5"
+                    fab:menu_shadowColor="#00000000"
                     fab:menu_shadowRadius="4dp"
                     fab:menu_shadowXOffset="1dp"
                     fab:menu_shadowYOffset="4dp"

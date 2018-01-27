@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flip.png",
-        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\flip.png"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\Tottie\\.android\\build-cache\\f3500fc9676e92056c09debf8d3b90064c07d9dd\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\flip.png",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\flip.png"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lagundileaves1.png",
@@ -68,20 +68,20 @@
         "source": "C:\\Users\\Tottie\\.android\\build-cache\\f3500fc9676e92056c09debf8d3b90064c07d9dd\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sunburn1.jpg",
-        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\sunburn1.jpg"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\term.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\term.png"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\balimbingleaves3.png",
-        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\balimbingleaves3.png"
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sunburn1.jpg",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\sunburn1.jpg"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\herb_icon.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\herb_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\balimbingleaves3.png",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\balimbingleaves3.png"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alusimanleaves3.jpg",
@@ -244,12 +244,12 @@
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\front.png"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\allergy1.jpg",
-        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\allergy1.jpg"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gugo3.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\gugo3.png"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\allergy1.jpg",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\allergy1.jpg"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\docc_icon.png",
@@ -320,12 +320,12 @@
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\gugo1.png"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alatsutsi1.jpg",
-        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\alatsutsi1.jpg"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kakawateleaves1.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\kakawateleaves1.png"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alatsutsi1.jpg",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\alatsutsi1.jpg"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kalatsutsi2.jpg",
@@ -356,12 +356,12 @@
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\kalatsutsi3.jpg"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kakawate3.jpg",
-        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\kakawate3.jpg"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\Tottie\\.android\\build-cache\\f3500fc9676e92056c09debf8d3b90064c07d9dd\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kakawate3.jpg",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\kakawate3.jpg"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\makabuhay2.png",
@@ -464,12 +464,12 @@
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\sabilaleaves2.jpg"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\infected2.jpg",
-        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\infected2.jpg"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\katakataka1.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\katakataka1.png"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\infected2.jpg",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable\\infected2.jpg"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\papaya1.jpg",
