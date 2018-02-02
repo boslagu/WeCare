@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi\\ic_icon.png",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-mdpi\\ic_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi\\ic_delete.png",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\mipmap-mdpi\\ic_delete.png"
+    }
+]

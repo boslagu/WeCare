@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_delete.png"
     },
     {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_stat_help.png",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_stat_help.png"
+    },
+    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v11\\ic_stat_name.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-xhdpi-v11\\ic_stat_name.png"
     },

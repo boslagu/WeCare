@@ -11,6 +11,10 @@
     <item android:title="others">
         <menu>
             <item
+                android:id="@+id/nav_help"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="Help" />
+            <item
                 android:id="@+id/nav_termofuse"
                 android:icon="@drawable/term"
                 android:title="Term of Use" />

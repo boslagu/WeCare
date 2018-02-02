@@ -1,4 +1,4 @@
-#Sat Jan 27 23:53:21 CST 2018
+#Fri Feb 02 12:26:07 CST 2018
 base.0=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3819b325b1191ee55d637fe5fa63421bf04ee37a
 renamed.1=classes.dex
 renamed.0=classes2.dex

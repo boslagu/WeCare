@@ -307,9 +307,9 @@ private TextToSpeech tts;
 
         if (keyWord == "next"){
 //            SAVE  TO DATABASE
+            dialogYes();
             speakOutNow("follow the instruction until the given time, then get back to me after the medication and if" +
                     " there's something went wrong.");
-            dialogYes();
         }
 //        IF MUST PROCEED TO SAVE THE DISEASE
         if (saveDisease == true) {
@@ -511,7 +511,7 @@ private TextToSpeech tts;
             diseaseToConfirm = cursorDisease.getString(cursorDisease.getColumnIndex("DISEASENAME")).toString().toString().toLowerCase();
             if (txtDiseaseName.getText().toString().toLowerCase().equals(diseaseToConfirm)) {
                 result = true;
-                speakOutNow("Disease is already in monitoring. check or go to monitoring.");
+//                speakOutNow("Disease is already in monitoring. check or go to monitoring.");
             }
         }
         if (num < 4) {
@@ -552,6 +552,11 @@ private TextToSpeech tts;
                 herbalDays = String.valueOf( (int) total);
 ////                speakOutNow("do the procedure, for "+txtDaysProcedure.getText()+" days");
         userDiseaseDbHelper.insertData(diseaseName, diseaseDescription, herbalName, herbalDescription, herbalProcedure, herbalDays);
+                Intent intent = new Intent(this, Monitoring.class);
+                startActivity(intent);
+            } else {
+                Intent intent = new Intent(this, Monitoring.class);
+                startActivity(intent);
             }
         }else{
             Toast.makeText(this, "max data", Toast.LENGTH_SHORT).show();

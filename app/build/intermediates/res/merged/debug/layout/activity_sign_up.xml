@@ -116,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Month"
+                    android:hint="Month MM"
                     android:inputType="date" />
 
                 <EditText
@@ -125,7 +125,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Day"
+                    android:hint="Day DD"
                     android:inputType="date" />
 
                 <EditText
@@ -134,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Year"
+                    android:hint="Year YYYY"
                     android:inputType="date" />
 
             </LinearLayout>

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     tools:context="com.example.thea.wecare.HerbalInfo">
 
     <LinearLayout
@@ -12,122 +11,120 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbarSize="3dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="10dp">
-
-                <ImageView
-                    android:id="@+id/imgViewHerbalInfo1"
-                    android:layout_width="250dp"
-                    android:layout_height="230dp"
-                    android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp" />
-
-                <ImageView
-                    android:id="@+id/imgViewHerbalInfo2"
-                    android:layout_width="250dp"
-                    android:layout_height="230dp"
-                    android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp" />
-
-                <ImageView
-                    android:id="@+id/imgViewHerbalInfo3"
-                    android:layout_width="250dp"
-                    android:layout_height="230dp"
-                    android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp" />
-            </LinearLayout>
-        </HorizontalScrollView>
-        <TextView
-            android:id="@+id/txtTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:text="TextView"
-            android:textColor="#2762be"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-        <ScrollView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
+
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:scrollbarSize="3dp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/txtDescription"
+                    <ImageView
+                        android:id="@+id/imgViewHerbalInfo1"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp" />
+
+                    <ImageView
+                        android:id="@+id/imgViewHerbalInfo2"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/imgViewHerbalInfo3"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="220dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="TextView"
+                android:textColor="#2762be"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="260dp"
+                android:background="#ffffff">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left|right"
-                    android:paddingBottom="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingTop="5dp"
-                    android:text="TextView"
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:id="@+id/txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="left|right"
-                    android:paddingBottom="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingTop="5dp"
-                    android:text=""
-                    android:textSize="32dp" />
-
-                <TextView
-                    android:id="@+id/Benefits"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="left|right"
-                    android:paddingBottom="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingTop="5dp"
-                    android:text="Benefits"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:id="@+id/txtBenefits"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:textSize="16dp" />
-
-                <TextView
-                    android:id="@+id/txtChecker"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textSize="15dp"
-                    android:visibility="gone" />
-            </LinearLayout>
-        </ScrollView>
+                    android:orientation="vertical">
 
 
-        <!--<Button-->
+                    <TextView
+                        android:id="@+id/txtDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|right"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:text="TextView"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/Benefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Benefits"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtBenefits"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/txtChecker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+
+
+            <!--<Button-->
             <!--android:id="@+id/btnSaveBookmark"-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:onClick="btnSaveBookmark"-->
             <!--android:text="Save to Bookmark" />-->
+        </FrameLayout>
     </LinearLayout>
 </LinearLayout>

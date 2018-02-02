@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="22"
+    api-level="23"
     build-mode="FULL"
-    density="xxhdpi"
+    density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1517068396007"
+    timestamp="1517545548318"
     token="3102784976553048761"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1160" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="31" />
+        duration="5352" />
     <task
         name="verifier"
         duration="0" />
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1517068396007"
+        timestamp="1517545548318"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Tottie\Videos\WeCare\app\build\intermediates\split-apk\debug\slices\slice_6.apk"

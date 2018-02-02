@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-mdpi-v11\\ic_name.png"
     },
     {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_stat_help.png",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-mdpi-v11\\ic_stat_help.png"
+    },
+    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v11\\ic_stat_name.png",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-mdpi-v11\\ic_stat_name.png"
     },

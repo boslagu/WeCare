@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.thea.wecare.BodyProcedure">
+
+    <ListView
+        android:id="@+id/lstDiseasesProcedure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <GridView
+        android:id="@+id/grv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:numColumns="3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.61">
+
+            <LinearLayout
+                android:id="@+id/lyoutprocedure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/baymaxBodyProcedure"
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/docdoc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtDiseaseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="Disease Name"
+                        android:textColor="#2762be"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtDiseaseDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Disease Description"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txtHerbalName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="Herbal Name"
+                        android:textColor="#2762be"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtHerbalSciName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="Hernal Scientific Name"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtHerbalDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Herbal Description"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Procedure"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtHerbalProcedure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Herbal Procedure"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/txtHerbalDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Herbal Days"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="btnConfirmDisease"
+                        android:text="Disease" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

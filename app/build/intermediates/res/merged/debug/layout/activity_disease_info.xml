@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     tools:context="com.example.thea.wecare.HerbalInfo">
 
     <LinearLayout
@@ -12,265 +11,269 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbarSize="3dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="10dp">
-
-                <ImageView
-                    android:id="@+id/imgViewDiseaseInfo1"
-                    android:layout_width="250dp"
-                    android:layout_height="230dp"
-                    android:layout_weight="1"
-                    android:onClick="viewDiseasePic1"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp" />
-
-                <ImageView
-                    android:id="@+id/imgViewDiseaseInfo2"
-                    android:layout_width="250dp"
-                    android:layout_height="230dp"
-                    android:layout_weight="1"
-                    android:onClick="viewDiseasePic2"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp" />
-
-                <ImageView
-                    android:id="@+id/imgViewDiseaseInfo3"
-                    android:layout_width="250dp"
-                    android:layout_height="230dp"
-                    android:layout_weight="1"
-                    android:onClick="viewDiseasePic3"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp" />
-            </LinearLayout>
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/txtDiseaseLearning"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:text="TextView"
-            android:textColor="#2762be"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-        <ScrollView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
+
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:scrollbarSize="3dp">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/txtDescriptionLearning"
+                    <ImageView
+                        android:id="@+id/imgViewDiseaseInfo1"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:onClick="viewDiseasePic1" />
+
+                    <ImageView
+                        android:id="@+id/imgViewDiseaseInfo2"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:onClick="viewDiseasePic2"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+
+                    <ImageView
+                        android:id="@+id/imgViewDiseaseInfo3"
+                        android:layout_width="360dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:onClick="viewDiseasePic3"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtDiseaseLearning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="220dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="TextView"
+                android:textColor="#2762be"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="260dp"
+                android:background="#ffffff">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left|right"
-                    android:paddingBottom="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingTop="5dp"
-                    android:text="TextView"
-                    android:textSize="16dp" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/Hereditary"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hereditary"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/txtDescriptionLearning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|right"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:text="TextView"
+                        android:textSize="16dp" />
 
-                <TextView
-                    android:id="@+id/txtHereditaryL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/Hereditary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hereditary"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/cause"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Cause"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/txtHereditaryL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/txtcauseL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/cause"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cause"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/looklike"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Look Like"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/txtcauseL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/txtlooklikeL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/looklike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Look Like"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/diagnosed"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Diagnosed"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/txtlooklikeL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/txtDiagnosedL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Disease Description"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/diagnosed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnosed"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/cure"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Cured"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/txtDiagnosedL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Disease Description"
+                        android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/txtCureL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Disease Description"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/cure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cured"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/symptoms"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Symptoms"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/txtCureL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Disease Description"
+                        android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/txtSymptomsL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Disease Description"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
-                <TextView
-                    android:id="@+id/treatment"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Treatment"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/symptoms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Symptoms"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/txtTreatmentL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Disease Description"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/txtSymptomsL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Disease Description"
+                        android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/textView20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/avoid"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Avoid"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/treatment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Treatment"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/txtAvoidL"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Disease Description"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:id="@+id/txtTreatmentL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Disease Description"
+                        android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/txtCheckerLearning"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textSize="15dp"
-                    android:visibility="gone" />
-            </LinearLayout>
-        </ScrollView>
-        <!--<Button-->
-            <!--android:id="@+id/btnSaveBookmarkLearning"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="btnSaveBookmarkLearning"-->
-            <!--android:text="Save to Bookmark" />-->
+                    <TextView
+                        android:id="@+id/avoid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Avoid"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtAvoidL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Disease Description"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtCheckerLearning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="15dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
     </LinearLayout>
 </LinearLayout>

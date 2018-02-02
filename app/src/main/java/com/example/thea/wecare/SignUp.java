@@ -27,6 +27,7 @@ public class SignUp extends AppCompatActivity implements TextToSpeech.OnInitList
     Button btnSubmit;
     LinearLayout layoutMale, layoutFemale;
     private TextToSpeech tts;
+    private boolean mGender = false;
 
 
     @Override
@@ -60,10 +61,12 @@ public class SignUp extends AppCompatActivity implements TextToSpeech.OnInitList
                     case R.id.radioFemale:
                         male = false;
                         Gender = "Female";
+                        mGender = true;
                         break;
                     case R.id.radioMale:
                         male = true;
                         Gender = "Male";
+                        mGender = true;
                         break;
                 }
             }
@@ -139,6 +142,12 @@ public class SignUp extends AppCompatActivity implements TextToSpeech.OnInitList
     }
     //inserting end up here
     public void SecondPage(View view) {
-        insertData();
+        if(etxtName.getText().toString().equals("") || etxtDay.getText().toString().equals("") || etxtHeight.getText().toString().equals("") ||
+                etxtLastName.getText().toString().equals("") || etxtMidName.getText().toString().equals("") || etxtMonth.getText().toString().equals("") ||
+                etxtWeight.getText().toString().equals("") || etxtYear.getText().toString().equals("") || mGender == false){
+            speakOutNow("please complete the information needed");
+        }else{
+            insertData();
+        }
     }
 }

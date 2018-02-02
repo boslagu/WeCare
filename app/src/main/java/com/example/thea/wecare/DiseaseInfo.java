@@ -80,7 +80,6 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
         //        ********#################################################################################img herbal
         if (txtDiseaseLearning.getText().toString().toLowerCase().equals("acne")){
             imgViewDiseaseInfo1.setImageResource(R.drawable.acne1);
-
             imgViewDiseaseInfo2.setImageResource(R.drawable.acne2);
             imgViewDiseaseInfo3.setImageResource(R.drawable.acne3);
         }

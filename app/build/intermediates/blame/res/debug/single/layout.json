@@ -180,12 +180,12 @@
         "source": "C:\\Users\\Tottie\\.android\\build-cache\\f3500fc9676e92056c09debf8d3b90064c07d9dd\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Tottie\\.android\\build-cache\\f3500fc9676e92056c09debf8d3b90064c07d9dd\\output\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_herbal_info.xml",
         "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\layout\\activity_herbal_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Tottie\\.android\\build-cache\\f3500fc9676e92056c09debf8d3b90064c07d9dd\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",

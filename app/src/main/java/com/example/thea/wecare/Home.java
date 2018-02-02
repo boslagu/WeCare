@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
+import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -36,6 +37,9 @@ public class Home extends AppCompatActivity
     private TextToSpeech tts;
 
 
+    private MyPermission myPermission;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +49,12 @@ public class Home extends AppCompatActivity
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        myPermission = new MyPermission(this);
+        if (!myPermission.checkPermissionAudioRecord() || !myPermission.checkPermissionInternet()){
+            myPermission.requestPermissionAudioRecord(MyPermission.RECORD_AUDIO_REQUEST);
+            myPermission.requestPermissionInternet(MyPermission.INTERNET_REQUEST);
+        }
 
         //****************************************************************************Initialization
         txtResult = (TextView) findViewById(R.id.txtResult);
@@ -124,7 +134,7 @@ public class Home extends AppCompatActivity
 //
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.home, menu);
+        getMenuInflater().inflate(R.menu.help, menu);
         return true;
     }
 
@@ -142,7 +152,11 @@ public class Home extends AppCompatActivity
             finish();
             Intent intent = new Intent(this, TermofUse.class);
             startActivity(intent);
-        } else if (id == R.id.nav_aboutus) {
+        } else if (id == R.id.nav_help) {
+            finish();
+            Intent intent = new Intent(this, Help.class);
+            startActivity(intent);
+        }else if (id == R.id.nav_aboutus) {
             finish();
             Intent intent = new Intent(this, AboutUs.class);
             startActivity(intent);
