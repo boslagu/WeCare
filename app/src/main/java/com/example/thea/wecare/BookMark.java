@@ -7,6 +7,7 @@ import android.support.transition.Visibility;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.widget.Toolbar;
 import android.text.Layout;
 import android.view.ActionProvider;
 import android.view.View;
@@ -42,6 +43,9 @@ public class BookMark extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_book_mark);
+
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 //********************************************************************************************************************************
         btnHerbal = (Button) findViewById(R.id.btnHerbal);
         btnLearning = (Button) findViewById(R.id.btnLearning);

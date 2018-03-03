@@ -10,6 +10,7 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -180,7 +181,9 @@ public class HerbalInfo extends AppCompatActivity implements TextToSpeech.OnInit
                 }
             }
         }
-
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle(txtTitle.getText().toString());
 //        ********#################################################################################img herbal
 //        if (txtTitle.getText().toString().toLowerCase().equals("alusiman leaves")){
 //            imgViewHerbalInfo1.setImageResource(R.drawable.alusimanleaves1);

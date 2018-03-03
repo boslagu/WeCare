@@ -20,13 +20,13 @@ public class NotificationReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        Toast.makeText(context,"ALARM",Toast.LENGTH_LONG).show();
-        Vibrator v = (Vibrator)context.getSystemService(context.VIBRATOR_SERVICE);
-        v.vibrate(10000);
+//        Toast.makeText(context,"",Toast.LENGTH_LONG).show();
+//        Vibrator v = (Vibrator)context.getSystemService(context.VIBRATOR_SERVICE);
+//        v.vibrate(10000);
 
-
+//
         NotificationCompat.Builder builder = (NotificationCompat.Builder) new NotificationCompat.Builder(context)
-                .setSmallIcon(R.drawable.icon)
+                .setSmallIcon(R.drawable.home)
                 .setContentTitle("We Care Notification")
                 .setContentText("Time for Monitoring.");
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);

@@ -4,6 +4,310 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical"
     tools:context="com.example.thea.wecare.TermofUse">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="What is Herbal Medicine?"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text='          Herbal medicine is the oldest and still the most widely used system of medicine in the world today. It is medicine made exclusively from plants. It is used in all societies and is common to all cultures.  There are many different "types" of herbal medicine that spring from different cultures around the world. All these have the use of medicinal plants in common, but they vary in the plants they use, the way they prepare and use medicines from these plants, and the philosophy of their treatment approaches. Different cultures may also use the same plants but differ in how it is used, or the part they use.  '
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView391"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text='          Herbal medicine is increasingly being validated by scientific investigation which seeks to understand the active chemistry of the plant. Many modern pharmaceuticals have been modeled on, or derived from chemicals found in plants. An example is the heart medication digoxin derived from foxglove (Digitalis purpurea).
+    Using plants as medicine provides significant advantages for treating many conditions. The therapeutic activity of a plant is due to its complex chemical nature with different parts of the plant providing certain therapeutic effects.
+     '
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Is your herbal supplement safe and effective?"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          Many Filipinos use botanical or herbal preparations with the expectation that the products will protect or improve their health.  However, not only are the purported benefits of herbal supplements dubious  several well-designed, controlled trials have found that some popular botanicals are ineffective at treating the problems that manufacturers claim they help  the supplements can also be harmful."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView401"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="          Many people assume that dietary supplements are inherently safe because they’re sold without prescription.  This is particularly the case for herbal products, which some people perceive as “natural” and therefore safer than artificial “chemicals.”  But some supplements contain biologically active compounds that can cause serious adverse effects on their own or when herbs and prescription or over-the-counter drugs are used together, which can trigger interactions that may enhance, reduce or eliminate the effects of a drug in ways that are largely unknown."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Herbal supplements are not drugs"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="          Herbal supplements, intended to maintain health but not treat disease, aren’t considered to be drugs by the Food and Drug Administration (FDA).  As a result, botanicals are only loosely regulated and not subject to the same rigorous testing as traditional medications. That leaves the effectiveness, quality, and safety of herbal supplements questionable."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="A Bright Future"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="          Although herbal medicine has always played a role in Philippine culture, it's finally beginning to receive the attention it deserves. In 1992, the Philippine Department of Health created the Philippine Institute of Traditional and Alternative Health Care (PITAHC). Thanks to PITAHC's vision to put &quot;traditional and alternative health care in the hands of the people,&quot; herbal remedies that were once considered folklore are now being researched and often recognized as practical treatment options."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="What you should do"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:text="Take these steps to limit the possibility of problems when using herbal products:"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView431"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="• Avoid herbs if you’re on drug therapy to control a chronic medical condition; or if you are undergoing cancer treatment."
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView432"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="• Don’t combine herbs with over-the-counter drugs that have similar effects."
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView433"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="• Don’t substitute an herb for a prescription drug recommended by your doctor."
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView434"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="• Always use a relatively low dose when taking herbal preparations."
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView435"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="• Limit the amount of herbal products you use."
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView436"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="• Stop taking herbal supplements at least two weeks before surgery; many interact with anesthesia or increase bleeding."
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView437"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingTop="10dp"
+                        android:text="• Stay alert for new, unexplained symptoms and promptly report any to your doctor. "
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:onClick="philstar"
+                        android:text="http://www.philstar.com/health-and-family/2015/04/07/1440983/your-herbal-supplement-safe-and-effective"
+                        android:textColor="@android:color/holo_blue_bright"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </LinearLayout>

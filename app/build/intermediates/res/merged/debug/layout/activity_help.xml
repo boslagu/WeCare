@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical"
+    tools:context="com.example.thea.wecare.Help">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Herbal medicine safe?"
+                        android:textColor="#2762be"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          Yes – when you know what you’re doing. Herbs (plant/botanical medicines) are also drugs, and they have a profound affect on the human body. Comprised of thousands of medicinal constituents, herbs can affect multiple body systems in targeted ways while also working synergistically with the body for a holistic treatment approach (allowing minimal to no side effects in the process)."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="What is an “herbalist” and how are they trained?"
+                        android:textColor="#2762be"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          An herbalist is a highly trained practitioner skilled in the art and science of matching medicinal plants with people. Botanical medicine is both incredibly simple and amazingly complex. An herbalist has extensive knowledge of not only the medicinal potential of botanical medicines (from phytochemistry to pharmacology) but also a solid understanding of human physiology and pathophysiology. Combine together, this allows an herbalist to provide holistic treatment of varying illness using the therapeutic potential of medicinal plants custom compounded to fit each individual need."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView411"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          In the United States, there is no licensure or regulations of who can call themselves an “herbalist” or who can practice using that title. It is extremely important to do your research and feel comfortable with your herbalists level of training. Some herbalists can attend weekend seminars or brief certificate programs and begin practicing with little actual clinical experience.
+"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView412"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          Most clinical herbalists practicing in a professional setting, however, will have gone through an accredited program of herbal studies with supervised practice and proper examination. Such programs include the Maryland University of Integrative Health (graduate level accredited program) or Bastyr University (undergraduate level accredited program)."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="What is the research supporting herbal medicine? Is it really effective?"
+                        android:textColor="#2762be"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          There are literally thousands of years of recorded herbal practice with countless documentation of their effectiveness, clinical safety and potency. Add that to the emerging clinical trials and modern scientific research on herbal medicine today and we have an incredible arsenal of information to utilize in clinical practice. Effectiveness of herbal preparations is directly linked to appropriate dosing, frequency and choice of herb. This is why it is to important to work in partnership with a qualified herbalist to be given appropriate dosing information and to have herbs custom selected or compounded for you in a very tailored way. The main reason you hear of herbs not working is due to inappropriate dosing or using the incorrect herb for the illness."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="How is herbal medicine different from modern-day pharmaceuticals?"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          When using herbs as medicine, you are employing the entire plant (root, flower, leaf, rhizome, etc) which consists of hundreds or thousands medicinal constituents to address specific issues. This differs from pharmaceuticals which are manufactured to address one specific goal (which they often do very effectively). Pharmaceuticals, standardized as they are, do not take into account the synergy of multiple body systems, often leading to unnecessary and potent side effects. Herbal medicines were not created for your specific diseases and illness, therefore there is no herb to “treat arthritis” or to “treat IBS”. Herbs, when combined together in a custom compounded form, can be remarkably effective in providing holistic treatment that is not just symptom specific, but whole body supporting."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="Can I take herbal formulas in place of my medications?"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          Not unless you are under the clinical supervision of a qualified Herbalist or Naturopathic Doctor. It can be very dangerous to abruptly discontinue pharmaceuticals and extremely difficult for a lay person to choose an acceptable alternative(s) to their treatment."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text="What about all the conflicting information I find on the internet about herbal remedies? I’m afraid to try anything!"
+                        android:textColor="#2762be"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="          The internet is the worst place to go to find natural medicine advice. Period. There is no regulation on people’s opinion and what can be published on the internet unless it is a scientific journal or medical publication. There is so much mis-information and poorly researched advice floating around that it makes it extremely difficult to make an informed decision about your health on your own. Seek out a qualified herbal medicine practitioner or naturopathic doctor who have been properly and extensively trained to help guide you in your health choices."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

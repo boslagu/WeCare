@@ -12,6 +12,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.text.SimpleDateFormat;
@@ -38,6 +40,11 @@ import android.support.v7.app.AppCompatActivity;
 
 public class ViewUserDisease extends AppCompatActivity implements RecognitionListener, TextToSpeech.OnInitListener{
 
+    LinearLayout linearLayout;
+
+    ArrayList<String> title=new ArrayList<String>();
+    ArrayList<String> title1=new ArrayList<String>();
+
     // FOR TTS
     private TextToSpeech tts;
     private TextView returnedText;
@@ -49,7 +56,7 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
     private String LOG_TAG = "VoiceRecognitionActivity";
 
     //
-    String answer, keyWord;
+    String answer, keyWord, myQuestion;
     int questionNumber;
     private TextView questionLoaderTxt;
     //
@@ -59,6 +66,10 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
     String itemTitle;
     UserDiseaseDbHelper userDiseaseDbHelper;
     TextView txtDiseaseTitle, txtDiseaseInfo, txtDays, txtNameChecker;
+
+    ListView listView;
+    CustomAdapterMonitoringMessage adapter;
+    public static ArrayList<MonitoringMessage> data;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +82,7 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
         questionNumber = 0;
         //
 
+        linearLayout = (LinearLayout) findViewById(R.id.mLayout);
         toggleButton = (ToggleButton) findViewById(R.id.toggleButton1);
 
         returnedText = (TextView) findViewById(R.id.textView1);
@@ -87,6 +99,7 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
 
 
         userDiseaseDbHelper = new UserDiseaseDbHelper(this);
+        tts = new TextToSpeech(this, this);
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -96,7 +109,6 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
                 }
             }
         });
-        tts = new TextToSpeech(this, this);
 
         //******************************************************************************get the data
         Intent intent = getIntent();
@@ -129,8 +141,24 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
                 }
             }
         });
-    }
+        listView = (ListView)findViewById(R.id.listView);
+        data= new ArrayList<MonitoringMessage>();
+//        load();
 
+        linearLayout.setVisibility(View.VISIBLE);
+    }
+//    ------------------------------------------------------------------------------------------Message
+//public void load(){
+//    ArrayList<String> title=new ArrayList<String>();
+//    ArrayList<String> title1=new ArrayList<String>();
+//    title.add("item1");
+//    title.add("item2");
+//    title.add("item3");
+//    title1.add("item11");
+//    title1.add("item12");
+//    title1.add("item13");
+//
+//}
 
     //    ##########################################################################################################################
     public void toggleButtonEnabler(){
@@ -148,6 +176,7 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
     public void questionLoader(){
         if (questionNumber == 0){
             questionLoaderTxt.setText("welcome back, you have come so early, are you feeling alright?");
+            myQuestion = "welcome back, you have come so early, are you feeling alright?";
             speakOutNow(questionLoaderTxt.getText().toString());
             boolean listeningToTTS = false;
             do {
@@ -160,6 +189,7 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
         }else if (questionNumber == 1){
             if(keyWord.equals("not")) {
                 questionLoaderTxt.setText("did you follow the instructions?");
+                myQuestion = "did you follow the instructions?";
                 speakOutNow(questionLoaderTxt.getText().toString());
                 boolean listeningToTTS = false;
                 do {
@@ -180,7 +210,8 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
 
         for (String arry : arrAnswer) {
             if ((arry.equals("f***"))) {
-                toastThis("That is not a good word to say! -_-");
+                toastThis("That is not a good word to say!");
+                myQuestion = "That is not a good word to say!";
             }
         }
         int arrPostition = 0;
@@ -194,6 +225,28 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
                         done = true;
                         keyWord = "yes";
                         speakOutNow("that's good, just continue the medication until the given time");
+                        myQuestion = "that's good, just continue the medication until the given time";
+
+//                        insert
+                        userDiseaseDbHelper = new UserDiseaseDbHelper(this);
+                        SQLiteDatabase sd = userDiseaseDbHelper.getReadableDatabase();
+                        Cursor cursor = sd.query("UserDisease_table" ,null, null, null, null, null, null);
+                        while (cursor.moveToNext()) {
+                            txtNameChecker.setText(cursor.getString(cursor.getColumnIndex("DISEASENAME")));
+                            if (txtNameChecker.getText().toString().toUpperCase().equals(txtDiseaseTitle.getText().toString().toUpperCase())) {
+                                myQuestion = cursor.getString(cursor.getColumnIndex("HERBALPROCEDURE"));
+                            }
+                        }
+
+                        title.add(myQuestion);
+                        title1.add("");
+                        data.clear();
+
+                        for (int i = 0; i < title.size(); i++) {
+                            data.add(new MonitoringMessage(title.get(i), title1.get(i)));
+                        }
+                        adapter =  new CustomAdapterMonitoringMessage(this, R.layout.activity_monitoring_message, data);
+                        listView.setAdapter(adapter);
                         foundKeyWord = true;
                     } else {
                         if (arrAnswer[arrPostition].equals("not") || arrAnswer[arrPostition].equals("no")) {
@@ -213,11 +266,28 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
                 foundKeyWord = true;
                 speakOutNow("I suggest you to do the right procedure until the given time and " +
                         "get back to me after your medication.");
+                myQuestion = "I suggest you to do the right procedure until the given time and " +
+                        "get back to me after your medication.";
+
+                title.add(myQuestion);
+                title1.add("");
+                data.clear();
+
+                for (int i = 0; i < title.size(); i++) {
+                    data.add(new MonitoringMessage(title.get(i), title1.get(i)));
+                }
+                adapter =  new CustomAdapterMonitoringMessage(this, R.layout.activity_monitoring_message, data);
+                listView.setAdapter(adapter);
             } else if (arrAnswer[arrPostition].equals("yeah") || arrAnswer[arrPostition].equals("yes")) {
 
                 foundKeyWord = true;
                 speakOutNow("you need to stop the medication because this herbal can't handle your" +
                         " problem, I advice you to consult for expert.");
+                myQuestion = "you need to stop the medication because this herbal can't handle your" +
+                        " problem, I advice you to consult for expert.";
+//                delete disease to database
+                String diseaseName = txtDiseaseTitle.getText().toString();
+                userDiseaseDbHelper.deleteData(diseaseName);
             }
         }
 
@@ -227,6 +297,8 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
         } else {
             speakOutNow("Please answer the question right. click the button to continue, or press back to go to" +
                     "consult");
+            myQuestion = "Please answer the question right. click the button to continue, or press back to go to" +
+                    "consult";
             questionNumber = questionNumber - 1;
         }
 
@@ -252,7 +324,6 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
 
     public void fetchData() {
         userDiseaseDbHelper = new UserDiseaseDbHelper(this);
-
         SQLiteDatabase sd = userDiseaseDbHelper.getReadableDatabase();
         Cursor cursor = sd.query("UserDisease_table" ,null, null, null, null, null, null);
         while (cursor.moveToNext()) {
@@ -267,8 +338,9 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
                 if (formattedDate.equals(txtDays.getText())){
 //                    #################################################################################################################
 
-                    speakOutNow("welcome back. do you feel better now?");
-
+                    if (tts.isSpeaking()) {
+                        speakOutNow("welcome back. do you feel better now?");
+                    }
                     DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -308,7 +380,7 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
 
             int language = tts.setLanguage(Locale.ENGLISH);
             if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED) {
-                fetchData();
+//                fetchData();
             }
             else{
 
@@ -424,6 +496,16 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
         returnedText.setText(text);
         answer = text;
 
+        title.add(myQuestion);
+        title1.add(answer);
+        data.clear();
+
+        for (int i = 0; i < title.size(); i++) {
+            data.add(new MonitoringMessage(title.get(i), title1.get(i)));
+        }
+        adapter =  new CustomAdapterMonitoringMessage(this, R.layout.activity_monitoring_message, data);
+        listView.setAdapter(adapter);
+
         answerChecker();
     }
 
@@ -468,5 +550,10 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
                 break;
         }
         return message;
+    }
+    public void Openlist (View view){
+        linearLayout.setVisibility(View.VISIBLE);
+    }public void Close (View view){
+        linearLayout.setVisibility(View.GONE);
     }
 }

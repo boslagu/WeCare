@@ -62,6 +62,7 @@ public class Home extends AppCompatActivity
         layoutMale = (LinearLayout) findViewById(R.id.layoutMale);
         layoutFemale = (LinearLayout) findViewById(R.id.layoutFemale);
 
+        tts = new TextToSpeech(this, this);
         tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -71,7 +72,6 @@ public class Home extends AppCompatActivity
                 }
             }
         });
-        tts = new TextToSpeech(this, this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -93,7 +93,7 @@ public class Home extends AppCompatActivity
             if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED) {
 
 //                    speakOutNow("Hello!. I am, Teya. . . how can i help you?. . ");
-                            //"click consult to consult your your problem. learning if you want to learn something about herbals and diseases. herbal for the information of herbals that you need. click monitoring to reconsult.");
+                            //"click consult to consult your your problem. learning if you want to learn something boarderabout herbals and diseases. herbal for the information of herbals that you need. click monitoring to reconsult.");
 
             }
             else{
@@ -137,6 +137,17 @@ public class Home extends AppCompatActivity
         getMenuInflater().inflate(R.menu.help, menu);
         return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.item_help) {
+            Intent intent = new Intent(this, Help.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -152,6 +163,10 @@ public class Home extends AppCompatActivity
             finish();
             Intent intent = new Intent(this, TermofUse.class);
             startActivity(intent);
+        }   else if (id == R.id.nav_instruction) {
+                finish();
+                Intent intent = new Intent(this, Slider.class);
+                startActivity(intent);
         } else if (id == R.id.nav_help) {
             finish();
             Intent intent = new Intent(this, Help.class);
@@ -183,13 +198,13 @@ public class Home extends AppCompatActivity
             txtResult.setText(stringBuffer.toString());
 
 //            if (stringBuffer.toString().equals("male")){
-//                speakOutNow("you are now about to consult, sir " + name + ". . please click on the part of the body, where you have your skin problem.");
+//                speakOutNow("you are now boarderabout to consult, sir " + name + ". . please click on the part of the body, where you have your skin problem.");
                 Intent intent = new Intent(this, Consult.class);
 ////                intent.putExtra("gender", stringBuffer.toString());
                 startActivity(intent);
 //            } else if (stringBuffer.toString().equals("female")){
 //                speakOutNow("clicked.");
-//                speakOutNow("you are now about to consult, ma'am " + name + ". . please click on the part of the body, where you have your skin problem.");
+//                speakOutNow("you are now boarderabout to consult, ma'am " + name + ". . please click on the part of the body, where you have your skin problem.");
 //                Intent intent = new Intent(this, Consult.class);
 ////                intent.putExtra("gender", stringBuffer.toString());
 //                startActivity(intent);

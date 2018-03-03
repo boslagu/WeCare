@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v9\\boarderone.xml",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-xxhdpi-v9\\boarderone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v9\\boardertwo.xml",
+        "source": "C:\\Users\\Tottie\\Videos\\WeCare\\app\\src\\main\\res\\drawable-xxhdpi-v9\\boardertwo.xml"
+    }
+]

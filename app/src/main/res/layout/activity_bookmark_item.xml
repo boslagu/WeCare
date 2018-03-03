@@ -11,10 +11,19 @@
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent">-->
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        android:orientation="vertical">
 
 
         <LinearLayout
@@ -43,21 +52,21 @@
                             android:layout_width="360dp"
                             android:layout_height="250dp"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/about" />
+                            app:srcCompat="@drawable/boarderabout" />
 
                         <ImageView
                             android:id="@+id/imgDisease2"
                             android:layout_width="360dp"
                             android:layout_height="250dp"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/about" />
+                            app:srcCompat="@drawable/boarderabout" />
 
                         <ImageView
                             android:id="@+id/imgDisease3"
                             android:layout_width="360dp"
                             android:layout_height="250dp"
                             android:layout_weight="1"
-                            app:srcCompat="@drawable/about" />
+                            app:srcCompat="@drawable/boarderabout" />
 
                     </LinearLayout>
 
@@ -70,38 +79,39 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:layout_marginTop="220dp"
-                    android:layout_weight="1"
+                    android:layout_marginTop="230dp"
                     android:background="#ffffff"
                     android:gravity="center"
                     android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
                     android:text="TextView"
                     android:textColor="#2762be"
-                    android:textSize="25sp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="260dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="265dp"
                     android:background="#ffffff">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp">
 
                         <TextView
                             android:id="@+id/txtDescriptionDisease"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp"
                             android:paddingStart="5dp"
                             android:text="TextView"
-                            android:textSize="14dp" />
+                            android:textSize="16dp" />
 
                         <TextView
                             android:id="@+id/textView13"
@@ -121,6 +131,8 @@
                             android:id="@+id/txtHereditaryB"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                         <TextView
@@ -141,6 +153,8 @@
                             android:id="@+id/txtcauseB"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                         <TextView
@@ -161,6 +175,8 @@
                             android:id="@+id/txtlooklikeB"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                         <TextView
@@ -182,6 +198,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Disease Description"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                         <TextView
@@ -204,6 +222,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Disease Description"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                         <TextView
@@ -225,6 +245,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Disease Description"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                         <TextView
@@ -246,6 +268,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Disease Description"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                         <TextView
@@ -267,6 +291,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Disease Description"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="14dp" />
 
                     </LinearLayout>
@@ -323,12 +349,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:layout_weight="1"
                     android:background="#ffffff"
                     android:gravity="center"
                     android:paddingBottom="5dp"
-                    android:paddingTop="5dp"
                     android:text="TextView"
                     android:textColor="#2762be"
                     android:textSize="25dp"
@@ -337,25 +362,28 @@
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="260dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="265dp"
                     android:background="#ffffff">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp">
 
 
                         <TextView
                             android:id="@+id/txtDescriptionHerbalB"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingLeft="10dp"
+                            android:paddingBottom="5dp"
                             android:paddingStart="5dp"
                             android:text="TextView"
-                            android:textSize="14dp" />
+                            android:textSize="16dp" />
 
                         <TextView
                             android:id="@+id/textView12"
@@ -375,6 +403,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
 
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
                             android:textSize="16dp" />
 
                         <TextView
@@ -398,7 +428,7 @@
 
 
         </LinearLayout>
-        </LinearLayout>
+    </LinearLayout>
     <!--</ScrollView>-->
 
     <TextView

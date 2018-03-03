@@ -11,13 +11,17 @@
     <item android:title="others">
         <menu>
             <item
+                android:id="@+id/nav_instruction"
+                android:icon="@drawable/instruction"
+                android:title="Instruction" />
+            <item
                 android:id="@+id/nav_help"
                 android:icon="@android:drawable/ic_menu_help"
                 android:title="Help" />
             <item
                 android:id="@+id/nav_termofuse"
                 android:icon="@drawable/term"
-                android:title="Term of Use" />
+                android:title="Terms of Use" />
             <item
                 android:id="@+id/nav_aboutus"
                 android:icon="@drawable/about"

@@ -5,6 +5,7 @@ package com.example.thea.wecare;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import android.media.Image;
 import android.os.CountDownTimer;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -12,11 +13,15 @@ import android.speech.SpeechRecognizer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,6 +49,10 @@ import java.util.Calendar;
 
 public class Procedure extends AppCompatActivity implements RecognitionListener, TextToSpeech.OnInitListener{
 
+    LinearLayout linearLayout;
+    ListView listView;
+    CustomAdapterMessage adapter;
+    public static ArrayList<ConsultMessage> data;
 //
 // FOR TTS
 private TextToSpeech tts;
@@ -53,12 +62,16 @@ private TextToSpeech tts;
     private SpeechRecognizer speech = null;
     private Intent recognizerIntent;
     private String LOG_TAG = "VoiceRecognitionActivity";
-    String answer, keyWord;
+    String answer, keyWord, myQuestion;
     int questionNumber, toggleButtonClick;
     private TextView questionLoaderTxt;
     //
 //
 
+    ImageView diseasePicture;
+
+    ArrayList<String> title=new ArrayList<String>();
+    ArrayList<String> title1=new ArrayList<String>();
 
     HerbalDbHelper herbalDbHelper;
     LearningDbHelper learningDbHelper;
@@ -77,7 +90,14 @@ private TextToSpeech tts;
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_procedure);
 
+        diseasePicture = (ImageView) findViewById(R.id.baymaxBodyProcedure);
+        diseasePicture.setScaleType(ImageView.ScaleType.FIT_XY);
 
+        linearLayout = (LinearLayout) findViewById(R.id.mLayout);
+
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Consult");
         //
         tts = new TextToSpeech(this, this);
         questionLoaderTxt = (TextView) findViewById(R.id.questionLoadertxt);
@@ -140,8 +160,61 @@ private TextToSpeech tts;
         herbalDbHelper = new HerbalDbHelper(this);
         learningDbHelper = new LearningDbHelper(this);
         fetchData();
-    }
 
+        if (txtDiseaseName.getText().toString().toLowerCase().equals("acne")){
+            diseasePicture.setImageResource(R.drawable.acne1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("sunburn or erythema")){
+            diseasePicture.setImageResource(R.drawable.sunburn1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("underarm or body odor")){
+            diseasePicture.setImageResource(R.drawable.underarm1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("allergy")){
+            diseasePicture.setImageResource(R.drawable.allergy1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("eczema ")){
+            diseasePicture.setImageResource(R.drawable.eczema1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("dandruff")){
+            diseasePicture.setImageResource(R.drawable.dandruff1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("infected mosquito bites ")){
+            diseasePicture.setImageResource(R.drawable.infected1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("measles")){
+            diseasePicture.setImageResource(R.drawable.measles1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("chicken pox")){
+            diseasePicture.setImageResource(R.drawable.chickenpox1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("burn")){
+            diseasePicture.setImageResource(R.drawable.burn1);
+        }
+        else if (txtDiseaseName.getText().toString().toLowerCase().equals("scabies (“galis aso”)")){
+            diseasePicture.setImageResource(R.drawable.scabies1);
+        }
+//----------------------------------------------------------------------------------------------------Message
+        listView = (ListView)findViewById(R.id.listView);
+        data= new ArrayList<ConsultMessage>();
+//        load();
+    }
+//    public void load(){
+//        ArrayList<String> title=new ArrayList<String>();
+//        ArrayList<String> title1=new ArrayList<String>();
+//        title.add("item1");
+//        title.add("item2");
+//        title.add("item3");
+//        title1.add("item11");
+//        title1.add("item12");
+//        title1.add("item13");
+//
+//        for (int i = 0; i < title.size(); i++) {
+//            data.add(new ConsultMessage(title.get(i), title1.get(i)));
+//        }
+//        adapter =  new CustomAdapterMessage(this, R.layout.activity_consult_message, data);
+//        listView.setAdapter(adapter);
+//    }
 
 
     //
@@ -160,6 +233,7 @@ private TextToSpeech tts;
     public void questionLoader(){
         if (questionNumber == 0){
             questionLoaderTxt.setText("Are you sure that this is what you feel?");
+            myQuestion = "Are you sure that this is what you feel?";
             speakOutNow(questionLoaderTxt.getText().toString());
             boolean listeningToTTS = false;
             do {
@@ -172,6 +246,7 @@ private TextToSpeech tts;
         }else if (questionNumber == 1){
             if(keyWord.equals("yes")) {
                 questionLoaderTxt.setText("How long do you have this disease?");
+                myQuestion = "How long do you have this disease?";
                 speakOutNow(questionLoaderTxt.getText().toString());
                 boolean listeningToTTS = false;
                 do {
@@ -183,6 +258,7 @@ private TextToSpeech tts;
                 } while (listeningToTTS == false);
             }else if(keyWord.equals("not")) {
                 questionLoaderTxt.setText("Please read the information again and confirm if this is what you are experiencing");
+                myQuestion = "Please read the information again and confirm if this is what you are experiencing";
                 speakOutNow(questionLoaderTxt.getText().toString());
 //                back to consult
             }
@@ -190,6 +266,8 @@ private TextToSpeech tts;
             if (keyWord.equals("next")) {
                 questionLoaderTxt.setText("Read and do the procedure until the given time, and get back to me after your " +
                         "medication.");
+                myQuestion = "Read and do the procedure until the given time, and get back to me after your " +
+                        "medication.";
 //                SAVE DISEASE TO DATABASE THEN GO TO MONITORING
                 dialogYes();
             }
@@ -302,19 +380,31 @@ private TextToSpeech tts;
         } else {
             speakOutNow("Please answer the question right. click the button to continue, or press back to get back to" +
                     "consult");
+            myQuestion = "Please answer the question right. click the button to continue, or press back to get back to" +
+                    "consult";
             questionNumber = questionNumber - 1;
         }
 
         if (keyWord == "next"){
 //            SAVE  TO DATABASE
+//            HERE
             dialogYes();
-            speakOutNow("follow the instruction until the given time, then get back to me after the medication and if" +
-                    " there's something went wrong.");
         }
 //        IF MUST PROCEED TO SAVE THE DISEASE
         if (saveDisease == true) {
             toggleButtonEnabler();
         }
+
+//        ArrayList<String> title=new ArrayList<String>();
+//        ArrayList<String> title1=new ArrayList<String>();
+//        title.add(myQuestion);
+//        title1.add(answer);
+//        for (int i = 0; i < title.size(); i++) {
+//            data.add(new ConsultMessage(title.get(i), title1.get(i)));
+//        }
+//        adapter =  new CustomAdapterMessage(this, R.layout.activity_consult_message, data);
+//        listView.setAdapter(adapter);
+
         questionNumber++;
     }
 
@@ -390,6 +480,15 @@ private TextToSpeech tts;
             text += result;
         returnedText.setText(text);
         answer = text;
+
+        title.add(myQuestion);
+        title1.add(answer);
+        data.clear();
+        for (int i = 0; i < title.size(); i++) {
+            data.add(new ConsultMessage(title.get(i), title1.get(i)));
+        }
+        adapter =  new CustomAdapterMessage(this, R.layout.activity_consult_message, data);
+        listView.setAdapter(adapter);
 
         answerChecker();
     }
@@ -516,6 +615,11 @@ private TextToSpeech tts;
         }
         if (num < 4) {
             if (result == false) {
+
+                speakOutNow("follow the instruction until the given time, then get back to me after the medication and if" +
+                        " there's something went wrong.");
+                myQuestion = "follow the instruction until the given time, then get back to me after the medication and if" +
+                        " there's something went wrong.";
                 //===================================================================================
                 String time;
                 /*Date*/ Calendar currentTime = Calendar.getInstance()/*.getTime()*/;
@@ -530,9 +634,8 @@ private TextToSpeech tts;
 
                 Calendar calNow = Calendar.getInstance();
                 Calendar calSet = (Calendar) calNow.clone();
-
-                calSet.set(calNow.get(Calendar.YEAR), calNow.get(Calendar.MONTH), (calNow.get(Calendar.DATE)+hday), 8, 00, 00000);
-
+calSet.set(calNow.get(Calendar.YEAR), calNow.get(Calendar.MONTH), (calNow.get(Calendar.DATE)/*+1hday*/),
+        calNow.get(Calendar.HOUR_OF_DAY), calNow.get(Calendar.MINUTE)+1, 0000);
                 if(calSet.compareTo(calNow) <= 0){
                     //Today Set time passed, count to tomorrow
                     calSet.add(Calendar.DATE, 1);
@@ -559,7 +662,7 @@ private TextToSpeech tts;
                 startActivity(intent);
             }
         }else{
-            Toast.makeText(this, "max data", Toast.LENGTH_SHORT).show();
+            speakOutNow("sorry, we can't add your disease in monitoring. because we care only 3 diseases at the same time");
         }
 
     }
@@ -570,22 +673,22 @@ private TextToSpeech tts;
 
 
     private void setAlarm(Calendar targetCal){
-//        txtHerbalSciName.setText(
-//                "\n\n***\n"
-//                        + "Alarm is set@ " + targetCal.getTime() + "\n"
-//                        + "***\n");
-
         Intent intent = new Intent(getBaseContext(), NotificationReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getBaseContext(), RQS_1, intent, 0 /*MainActivity.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT*/);
         intent.putExtra("extra", "alarm on");
         AlarmManager alarmManager = (AlarmManager)getSystemService(Context.ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, targetCal.getTimeInMillis(), pendingIntent);
-
     }
 
 
 
     public void toastThis(String text){
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+    }
+
+public void openlist (View view){
+        linearLayout.setVisibility(View.VISIBLE);
+}public void close (View view){
+        linearLayout.setVisibility(View.GONE);
     }
 }

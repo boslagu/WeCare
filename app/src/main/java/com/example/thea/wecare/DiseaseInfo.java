@@ -10,6 +10,7 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,6 +20,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ZoomControls;
 
 public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnInitListener{
 
@@ -31,6 +33,8 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
     BookmarkDatabaseHelper bookmarkDatabaseHelper;
     ImageView imgViewDiseaseInfo1, imgViewDiseaseInfo2, imgViewDiseaseInfo3;
 
+//    ZoomControls zoomControls;
+//    TextView txt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +43,9 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_disease_info);
 
-
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Disease");
         //****************************************************************************Initialization
         txtCheckerLearning = (TextView) findViewById(R.id.txtCheckerLearning);
         txtHereditaryL = (TextView) findViewById(R.id.txtHereditaryL);
@@ -54,6 +60,33 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
         bookmarkDatabaseHelper = new BookmarkDatabaseHelper(this);
         tts = new TextToSpeech(this, this);
 
+        //----------------------------------------------------------------------------------------Zoom
+//        zoomControls = (ZoomControls) findViewById(R.id.zoom);
+//        txtDiseaseLearning = (TextView) findViewById(R.id.txtDiseaseLearning);
+//        txtDescriptionLearning = (TextView) findViewById(R.id.txtDescriptionLearning);
+//
+//        zoomControls.setOnZoomInClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                float x = txtDiseaseLearning.getScaleX();
+//                float y = txtDiseaseLearning.getScaleY();
+//
+//                txtDiseaseLearning.setScaleX((int)(x+1));
+//                txtDiseaseLearning.setScaleY((int)(y+1));
+//                txtDescriptionLearning.setScaleX((int)(x+1));
+//                txtDescriptionLearning.setScaleY((int)(y+1));
+//            }
+//        });
+//        zoomControls.setOnZoomOutClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                float x = txtDiseaseLearning.getScaleX();
+//                float y = txtDiseaseLearning.getScaleY();
+//
+//                txt.setScaleX((int)(x-1));
+//                txt.setScaleY((int)(y-1));
+//            }
+//        });
 
         //******************************************************************************get the data
         imgViewDiseaseInfo1 = (ImageView) findViewById(R.id.imgViewDiseaseInfo1);
@@ -68,6 +101,7 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
         txtDiseaseLearning.setText(itemTitle);
         txtDescriptionLearning = (TextView) findViewById(R.id.txtDescriptionLearning);
         fetchData();
+
 
 //        pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
 //        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.acne1);
@@ -141,11 +175,112 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
             imgViewDiseaseInfo2.setImageResource(R.drawable.scabies2);
             imgViewDiseaseInfo3.setImageResource(R.drawable.scabies3);
         }
-
-
-
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("abscess")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.abscess1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.abscess2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.abscess3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("alopecia areata")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.alopecia1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.alopecia2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.alopecia3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("basal cell carcinoma")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.basal1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.basal2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.basal3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("bowen's disease")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.bowen1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.bowen2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.bowen3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("darier's disease")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.darier1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.darier2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.darier3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("disseminated superficial actinic porokeratosis")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.disseminated1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.disseminated2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.disseminated3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("dystrophic epidermolysis bullosa (deb)")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.dystrophic1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.dystrophic2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.dystrophic3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("fungal infection of the nails")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.fungal1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.fungal2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.fungal3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("hives")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.hives1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.hives2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.hives3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("hyperhidrosis")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.hyperdrosis1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.hyperdrosis2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.hyperdrosis3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("ichthyosis")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.ichthyosis1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.ichthyosis2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.ichthyosis3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("impetigo")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.impetigo1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.impetigo2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.impetigo3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("lichen sclerosus")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.lichen1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.lichen2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.lichen3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("pemphigus vulgaris")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.pemphigus1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.pemphigus2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.pemphigus3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("psoriasis")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.psoriasis1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.psoriasis2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.psoriasis3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("rosacea")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.rosacea1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.rosacea2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.rosacea3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("sweet's syndrome")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.sweet1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.sweet2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.sweet3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("underarm or body odor")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.underarm1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.underarm2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.underarm3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("vitiligo")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.vitiligo1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.vitiligo2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.vitiligo3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("warts")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.warts1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.warts2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.warts3);
+        }
+        else if (txtDiseaseLearning.getText().toString().toLowerCase().equals("xeroderma pigmentosum (xp).")){
+            imgViewDiseaseInfo1.setImageResource(R.drawable.xeroderma1);
+            imgViewDiseaseInfo2.setImageResource(R.drawable.xeroderma2);
+            imgViewDiseaseInfo3.setImageResource(R.drawable.xeroderma3);
+        }
     }
-
 
     public void fetchData() {
         learningDbHelper = new LearningDbHelper(this);

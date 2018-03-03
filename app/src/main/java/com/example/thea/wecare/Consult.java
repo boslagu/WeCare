@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -28,6 +29,8 @@ public class Consult extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_consult);
 
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         //**************************************************************Initialization of imageviews
         imgBackFemale = (ImageView) findViewById(R.id.imgBackFemale);
         imgFrontFemale = (ImageView) findViewById(R.id.imgFrontFemale);

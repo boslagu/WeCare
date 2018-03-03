@@ -7,10 +7,17 @@
     android:orientation="vertical"
     tools:context="com.example.thea.wecare.Learning">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
@@ -18,36 +25,35 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:onClick="btnShowHerbal"
             android:background="#eff5f8"
+            android:onClick="btnShowHerbal"
+            android:text="Herbals"
             android:textColor="#2762be"
-            android:textSize="18dp"
-            android:text="Herbals" />
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btnLearning"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:onClick="btnShowDisease"
             android:background="#088dd5"
+            android:onClick="btnShowDisease"
+            android:text="Diseases"
             android:textColor="#ffffff"
-            android:textSize="18dp"
-            android:text="Diseases" />
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#eff5f8"
             android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:background="#eff5f8">
+            android:paddingTop="10dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -57,15 +63,15 @@
                     android:id="@+id/lstLearningHerbal"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="5dp"
-                    android:background="#eff5f8"/>
+                    android:background="#eff5f8"
+                    android:paddingLeft="5dp" />
 
                 <ListView
                     android:id="@+id/lstLearningDisease"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingLeft="5dp"
                     android:background="#eff5f8"
+                    android:paddingLeft="5dp"
                     android:visibility="gone" />
 
 

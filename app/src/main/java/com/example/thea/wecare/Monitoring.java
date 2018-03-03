@@ -7,6 +7,7 @@ import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -30,6 +31,7 @@ public class Monitoring extends AppCompatActivity implements TextToSpeech.OnInit
     ListView lstUserDisease;
     TextView time;
     CustomAdapter adapter;
+    ArrayList<String> diseasesNames;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,15 +39,25 @@ public class Monitoring extends AppCompatActivity implements TextToSpeech.OnInit
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_monitoring);
-
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         dataBaseHelper = new DataBaseHelper(this);
 
         lstUserDisease = (ListView) findViewById(R.id.lstUserDisease);
         //String[] diseaseTitles;
         userDiseaseDbHelper = new UserDiseaseDbHelper(this);
-        diseaseTitles = new ArrayList<>();
+        diseasesNames = new ArrayList<>();
         data= new ArrayList<Item>();
         tts = new TextToSpeech(this, this);
+        tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status != TextToSpeech.ERROR){
+                    tts.setLanguage(Locale.getDefault());
+                    fetchData();
+                }
+            }
+        });
 //        fetchData();
 //**************************************************************************************Get the date
 //        time = (TextView) findViewById(R.id.textView6);
@@ -94,7 +106,7 @@ public class Monitoring extends AppCompatActivity implements TextToSpeech.OnInit
     }
 
     public void fetchData(){
-        ArrayList<String> herbalName = new ArrayList<>();
+        diseasesNames = new ArrayList<>();
         Cursor cursor = userDiseaseDbHelper.getAllData();
         if(cursor.getCount() == 0){
             speakOutNow("you have nothing to monitor, please consult first.");
@@ -121,12 +133,13 @@ public class Monitoring extends AppCompatActivity implements TextToSpeech.OnInit
 
         }else{
             while(cursor.moveToNext()){
-                herbalName.add(cursor.getString(1));
+                diseasesNames.add(cursor.getString(1));
             }
 
-            Collections.sort(herbalName, String.CASE_INSENSITIVE_ORDER);
-            for (int i = 0; i < herbalName.size(); i++) {
-                data.add(new Item(herbalName.get(i)));
+            Collections.sort(diseasesNames, String.CASE_INSENSITIVE_ORDER);
+            for (int i = 0; i < diseasesNames.size(); i++) {
+                data.add(new Item(diseasesNames.get(i)));
+                Toast.makeText(this, diseasesNames.get(i), Toast.LENGTH_SHORT).show();
             }
             //display items
             adapter =  new CustomAdapter(this, R.layout.item, data);
@@ -150,7 +163,7 @@ public class Monitoring extends AppCompatActivity implements TextToSpeech.OnInit
             int language = tts.setLanguage(Locale.ENGLISH);
             if (language == TextToSpeech.LANG_MISSING_DATA || language == TextToSpeech.LANG_NOT_SUPPORTED) {
 
-                fetchData();
+//                fetchData();
 
             }
             else{

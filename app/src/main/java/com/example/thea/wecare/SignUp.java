@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -38,6 +39,8 @@ public class SignUp extends AppCompatActivity implements TextToSpeech.OnInitList
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_sign_up);
 
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         //****************************************************************************Initialization
         myDb = new DataBaseHelper(this);
         etxtName = (EditText) findViewById(R.id.etxtName);
@@ -48,7 +51,7 @@ public class SignUp extends AppCompatActivity implements TextToSpeech.OnInitList
         etxtYear = (EditText) findViewById(R.id.etxtYear);
         etxtWeight = (EditText) findViewById(R.id.etxtWeight);
         etxtHeight = (EditText) findViewById(R.id.etxtHeight);
-        btnSubmit = (Button) findViewById(R.id.btnSubmit);
+//        btnSubmit = (Button) findViewById(R.id.btnSubmit);
         layoutMale = (LinearLayout) findViewById(R.id.layoutMale);
         layoutFemale = (LinearLayout) findViewById(R.id.layoutFemale);
         tts = new TextToSpeech(this, this);
@@ -144,10 +147,15 @@ public class SignUp extends AppCompatActivity implements TextToSpeech.OnInitList
     public void SecondPage(View view) {
         if(etxtName.getText().toString().equals("") || etxtDay.getText().toString().equals("") || etxtHeight.getText().toString().equals("") ||
                 etxtLastName.getText().toString().equals("") || etxtMidName.getText().toString().equals("") || etxtMonth.getText().toString().equals("") ||
-                etxtWeight.getText().toString().equals("") || etxtYear.getText().toString().equals("") || mGender == false){
+                etxtWeight.getText().toString().equals("") || etxtYear.getText().toString().equals("") || mGender == false || etxtYear.length()!= 4) {
             speakOutNow("please complete the information needed");
-        }else{
+        }
+        else{
             insertData();
         }
+    }
+    public void Cancel(View view){
+Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
     }
 }

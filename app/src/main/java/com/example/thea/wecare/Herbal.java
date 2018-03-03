@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -46,6 +47,9 @@ public class Herbal extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_herbal);
+
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         dataBaseHelper = new DataBaseHelper(this);
         listview = (ListView) findViewById(R.id.lstHerbal);
@@ -91,13 +95,12 @@ public class Herbal extends AppCompatActivity {
 
 
         namelist=new LinkedHashMap<>();
-        int ii;
         SQLiteDatabase sd = db.getReadableDatabase();
         Cursor cursor = sd.query("tbl_Herbal" ,null, null, null, null, null, null);
-        ii=cursor.getColumnIndex("herbalName");
         titles=new ArrayList<String>();
+
         while (cursor.moveToNext()) {
-            titles.add(cursor.getString(cursor.getColumnIndex("herbalName")));
+                titles.add(cursor.getString(cursor.getColumnIndex("herbalName")));
         }
         Collections.sort(titles, String.CASE_INSENSITIVE_ORDER);
 //-----------------------------------------------------------------------------------------------

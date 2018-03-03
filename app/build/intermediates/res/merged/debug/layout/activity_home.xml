@@ -5,6 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
@@ -18,7 +19,11 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:menu="@menu/activity_home_drawer" />
+        android:background="#C0C0C0"
+        android:visibility="visible"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_home_drawer">
+
+    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

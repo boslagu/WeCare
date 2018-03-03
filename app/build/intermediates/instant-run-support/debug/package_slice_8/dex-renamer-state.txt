@@ -1,4 +1,4 @@
-#Mon Jan 29 11:00:12 CST 2018
+#Thu Mar 01 19:07:10 CST 2018
 base.0=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
 renamed.0=classes.dex
 file.0=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8\\classes.dex

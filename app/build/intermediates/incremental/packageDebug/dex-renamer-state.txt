@@ -1,7 +1,4 @@
-#Fri Feb 02 12:26:07 CST 2018
-base.0=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3819b325b1191ee55d637fe5fa63421bf04ee37a
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_cfe15ac0a6fa96d90aa6d2c93ebea677f61d8e99\\classes.dex
-base.1=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_cfe15ac0a6fa96d90aa6d2c93ebea677f61d8e99
-file.0=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3819b325b1191ee55d637fe5fa63421bf04ee37a\\classes.dex
+#Fri Mar 02 20:36:00 CST 2018
+base.0=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Tottie\\Videos\\WeCare\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
