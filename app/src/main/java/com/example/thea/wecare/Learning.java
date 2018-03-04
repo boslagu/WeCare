@@ -286,26 +286,32 @@ public class Learning extends AppCompatActivity {
     public void Consult (View v){
         Cursor cursor = dataBaseHelper.getAllData();
         if (cursor != null && cursor.getCount() > 0) {
+            finish();
             Intent intent = new Intent(this, Consult.class);
             startActivity(intent);
         } else {
+            finish();
             Intent intent = new Intent(this, SignUp.class);
             startActivity(intent);
         }
     }
     public void Learning (View v){
+        finish();
         Intent intent = new Intent(this,Learning.class);
         startActivity(intent);
     }
     public void Herbal (View v){
+        finish();
         Intent intent = new Intent(this,Herbal.class);
         startActivity(intent);
     }
     public void Monitor (View v){
+        finish();
         Intent intent = new Intent(this,Monitoring.class);
         startActivity(intent);
     }
     public void Bookmark (View v){
+        finish();
         Intent intent = new Intent(this,BookMark.class);
         startActivity(intent);
     }

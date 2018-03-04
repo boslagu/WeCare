@@ -282,6 +282,8 @@ public class DiseaseInfo extends AppCompatActivity implements TextToSpeech.OnIni
         }
     }
 
+
+
     public void fetchData() {
         learningDbHelper = new LearningDbHelper(this);
         try {

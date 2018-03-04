@@ -150,6 +150,7 @@ private ViewPager mSliderViewPager;
     }
     public void NEXT (View view){
         if (next.getText() == "Finish"){
+            finish();
             Intent intent = new Intent(this, Home.class);
             startActivity(intent);
         }

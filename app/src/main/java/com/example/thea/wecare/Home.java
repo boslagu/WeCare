@@ -114,10 +114,10 @@ public class Home extends AppCompatActivity
 
 
 //
-    @Override
-    public void onBackPressed() {
-        finish();
-    }
+//    @Override
+//    public void onBackPressed() {
+//        finish();
+//    }
 
 
 //        this.doubleBackToExitPressedOnce = true;
@@ -142,6 +142,7 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.item_help) {
+            finish();
             Intent intent = new Intent(this, Help.class);
             startActivity(intent);
             return true;
@@ -197,6 +198,7 @@ public class Home extends AppCompatActivity
             name = stringBufferName.toString();
             txtResult.setText(stringBuffer.toString());
 
+            finish();
 //            if (stringBuffer.toString().equals("male")){
 //                speakOutNow("you are now boarderabout to consult, sir " + name + ". . please click on the part of the body, where you have your skin problem.");
                 Intent intent = new Intent(this, Consult.class);
@@ -210,6 +212,7 @@ public class Home extends AppCompatActivity
 //                startActivity(intent);
 //            }
         } else {
+            finish();
             Intent intent = new Intent(this, SignUp.class);
             startActivity(intent);
         }
@@ -241,5 +244,8 @@ public class Home extends AppCompatActivity
     public void a (View view){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=9-3OCc5g5oE"));
                 startActivity(intent);
+    }
+    public void onBackPressed(){
+        finish();
     }
 }

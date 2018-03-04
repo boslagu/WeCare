@@ -374,6 +374,13 @@ public class ViewUserDisease extends AppCompatActivity implements RecognitionLis
         }
     }
 
+
+    public void onBackPressed(){
+        finish();
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS){

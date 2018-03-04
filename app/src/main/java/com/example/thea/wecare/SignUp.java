@@ -137,6 +137,7 @@ public class SignUp extends AppCompatActivity implements TextToSpeech.OnInitList
             } else if (Gender == "Male"){
                 speakOutNow("Welcome to consult, sir " + etxtName.getText());
             }
+            finish();
             Intent intent = new Intent(this, Consult.class);
             intent.putExtra("gender", Gender);
             startActivity(intent);

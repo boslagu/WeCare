@@ -121,7 +121,7 @@ public class HerbalInfo extends AppCompatActivity implements TextToSpeech.OnInit
     };
 
 
-    TextView txtTitle, txtDescription, txtChecker, txtBenefits;
+    TextView txtTitle, txtDescription, txtChecker, txtBenefits, txtOthers;
     String itemTitle;
     private TextToSpeech tts;
     BookmarkDatabaseHelper bookmarkDatabaseHelper;
@@ -139,6 +139,7 @@ public class HerbalInfo extends AppCompatActivity implements TextToSpeech.OnInit
 
         //****************************************************************************Initialization
         txtChecker = (TextView) findViewById(R.id.txtChecker);
+        txtOthers = (TextView) findViewById(R.id.txtOthers);
         txtBenefits = (TextView) findViewById(R.id.txtBenefits);
         herbalDbHelper = new HerbalDbHelper(this);
         bookmarkDatabaseHelper = new BookmarkDatabaseHelper(this);
@@ -322,6 +323,7 @@ public class HerbalInfo extends AppCompatActivity implements TextToSpeech.OnInit
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
+
     public void fetchData() {
         herbalDbHelper = new HerbalDbHelper(this);
         try {
@@ -340,6 +342,7 @@ public class HerbalInfo extends AppCompatActivity implements TextToSpeech.OnInit
             if (txtChecker.getText().toString().toUpperCase().equals(txtTitle.getText().toString().toUpperCase())) {
                 txtDescription.setText(cursor.getString(cursor.getColumnIndex("herbalDescription")));
                 txtBenefits.setText(cursor.getString(cursor.getColumnIndex("herbalBenefits")));
+                txtOthers.setText(cursor.getString(cursor.getColumnIndex("others")));
             }
         }
     }

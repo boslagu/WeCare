@@ -145,75 +145,90 @@ public class Consult extends AppCompatActivity {
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "body");
         startActivity(intent);
+        finish();
     }
     public void BodyFemale(View v) {
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "body");
         startActivity(intent);
+        finish();
     }
     public void Body(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "body");
         startActivity(intent);
+        finish();
     }
     public void Head(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "head");
         startActivity(intent);
+        finish();
     }
     public void Arm(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "arm");
         startActivity(intent);
+        finish();
     }
     public void Leg(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "leg");
         startActivity(intent);
+        finish();
     }
     public void Shoulder(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "shoulder");
         startActivity(intent);
+        finish();
     }
     public void Foot(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "foot");
         startActivity(intent);
+        finish();
     }
     public void Neck(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "neck");
         startActivity(intent);
+        finish();
     }
     public void Hand(View v){
         Intent intent = new Intent(this, BodyProcedure.class);
         intent.putExtra("title", "hand");
         startActivity(intent);
+        finish();
     }
     //###################################################*********************************************************************************
 //   Floating ActionButton
     public void Consult(View v) {
+        finish();
         Intent intent = new Intent(this, Consult.class);
         startActivity(intent);
     }
 
     public void Learning(View v) {
+        finish();
         Intent intent = new Intent(this, Learning.class);
         startActivity(intent);
     }
 
     public void Herbal(View v) {
+        finish();
         Intent intent = new Intent(this, Herbal.class);
         startActivity(intent);
     }
 
     public void Monitor(View v) {
+        finish();
         Intent intent = new Intent(this, Monitoring.class);
         startActivity(intent);
     }
 
     public void Bookmark(View v) {
+        finish();
         Intent intent = new Intent(this, BookMark.class);
         startActivity(intent);
     }

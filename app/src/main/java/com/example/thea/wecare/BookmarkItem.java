@@ -358,6 +358,13 @@ public class BookmarkItem extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void onBackPressed(){
+        finish();
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
     public void returnIntent(){
         Intent intent = new Intent(this, BookMark.class);
         startActivity(intent);

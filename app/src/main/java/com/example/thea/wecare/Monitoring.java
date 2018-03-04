@@ -83,24 +83,29 @@ public class Monitoring extends AppCompatActivity implements TextToSpeech.OnInit
                 Intent intent = new Intent(getApplicationContext(), ViewUserDisease.class);
                 intent.putExtra("title", itemTitle);
                 startActivity(intent);
+
+                finish();
             }
         });
 
     }
 
     public void returnIntentHome(){
+        finish();
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 
 
     public void returnIntentConsult(){
+        finish();
         Intent intent = new Intent(this, Consult.class);
         startActivity(intent);
     }
 
 
     public void returnIntentSignUp(){
+        finish();
         Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
@@ -258,26 +263,32 @@ public class Monitoring extends AppCompatActivity implements TextToSpeech.OnInit
     public void Consult (View v){
         Cursor cursor = dataBaseHelper.getAllData();
         if (cursor != null && cursor.getCount() > 0) {
+            finish();
             Intent intent = new Intent(this, Consult.class);
             startActivity(intent);
         } else {
+            finish();
             Intent intent = new Intent(this, SignUp.class);
             startActivity(intent);
         }
     }
     public void Learning (View v){
+        finish();
         Intent intent = new Intent(this,Learning.class);
         startActivity(intent);
     }
     public void Herbal (View v){
+        finish();
         Intent intent = new Intent(this,Herbal.class);
         startActivity(intent);
     }
     public void Monitor (View v){
+        finish();
         Intent intent = new Intent(this,Monitoring.class);
         startActivity(intent);
     }
     public void Bookmark (View v){
+        finish();
         Intent intent = new Intent(this,BookMark.class);
         startActivity(intent);
     }

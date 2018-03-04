@@ -155,6 +155,23 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other Information"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtOthers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="14dp" />
+
+                <TextView
                     android:id="@+id/txtChecker"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

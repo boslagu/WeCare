@@ -312,6 +312,13 @@ public class ConfirmationActivity extends AppCompatActivity  implements Recognit
     }
 
 
+
+    public void onBackPressed(){
+        finish();
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+    }
+
     //    TTS PART
     @Override
     public void onInit(int text) {

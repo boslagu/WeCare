@@ -192,8 +192,6 @@ public class BodyProcedure extends AppCompatActivity {
     }
 
 
-
-
     private void speakOutNow(String text) {
         tts.speak(text, TextToSpeech.QUEUE_FLUSH,null);
     }
