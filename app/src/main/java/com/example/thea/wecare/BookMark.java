@@ -96,8 +96,6 @@ public class BookMark extends AppCompatActivity {
 
     public void onBackPressed(){
         finish();
-        Intent intent = new Intent(this, Home.class);
-        startActivity(intent);
     }
 
 

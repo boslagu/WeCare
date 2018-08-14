@@ -203,50 +203,173 @@ public class BookmarkItem extends AppCompatActivity {
                 }
             }
         } else {
-            if (itemTitle.toString().toLowerCase().equals("acne")){
+            if (txtCheck.getText().toString().toLowerCase().equals("acne")){
                 imgDisease1.setImageResource(R.drawable.acne1);
-                imgDisease2.setImageResource(R.drawable.acne2);
-                imgDisease3.setImageResource(R.drawable.acne3);
-            } else if (itemTitle.toString().toLowerCase().equals("sunburn or erythema")){
+                imgDisease1.setImageResource(R.drawable.acne2);
+                imgDisease1.setImageResource(R.drawable.acne3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("sunburn or erythema")){
                 imgDisease1.setImageResource(R.drawable.sunburn1);
-                imgDisease2.setImageResource(R.drawable.sunburn2);
-                imgDisease3.setImageResource(R.drawable.sunburn3);
-            } else if (itemTitle.toString().toLowerCase().equals("underarm or body odor ")){
+                imgDisease1.setImageResource(R.drawable.sunburn2);
+                imgDisease1.setImageResource(R.drawable.sunburn3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("underarm or body odor ")){
                 imgDisease1.setImageResource(R.drawable.underarm1);
-                imgDisease2.setImageResource(R.drawable.underarm2);
-                imgDisease3.setImageResource(R.drawable.underarm3);
-            } else if (itemTitle.toString().toLowerCase().equals("allergy")){
+                imgDisease1.setImageResource(R.drawable.underarm2);
+                imgDisease1.setImageResource(R.drawable.underarm3);
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("allergy")){
                 imgDisease1.setImageResource(R.drawable.allergy1);
                 imgDisease2.setImageResource(R.drawable.allergy2);
                 imgDisease3.setImageResource(R.drawable.allergy3);
-            } else if (itemTitle.toString().toLowerCase().equals("eczema ")){
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("eczema ")){
                 imgDisease1.setImageResource(R.drawable.eczema1);
-                imgDisease2.setImageResource(R.drawable.eczema2);
-                imgDisease3.setImageResource(R.drawable.eczema3);
-            } else if (itemTitle.toString().toLowerCase().equals("dandruff")){
+                imgDisease1.setImageResource(R.drawable.eczema2);
+                imgDisease1.setImageResource(R.drawable.eczema3);
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("dandruff")){
                 imgDisease1.setImageResource(R.drawable.dandruff1);
-                imgDisease2.setImageResource(R.drawable.dandruff2);
-                imgDisease3.setImageResource(R.drawable.dandruff3);
-            } else if (itemTitle.toString().toLowerCase().equals("infected mosquito bites ")){
+                imgDisease1.setImageResource(R.drawable.dandruff2);
+                imgDisease1.setImageResource(R.drawable.dandruff3);
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("infected mosquito bites ")){
                 imgDisease1.setImageResource(R.drawable.infected1);
-                imgDisease2.setImageResource(R.drawable.infected2);
-                imgDisease3.setImageResource(R.drawable.infected3);
-            } else if (itemTitle.toString().toLowerCase().equals("measles")){
+                imgDisease1.setImageResource(R.drawable.infected2);
+                imgDisease1.setImageResource(R.drawable.infected3);
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("measles")){
                 imgDisease1.setImageResource(R.drawable.measles1);
-                imgDisease2.setImageResource(R.drawable.measles2);
-                imgDisease3.setImageResource(R.drawable.measles3);
-            } else if (itemTitle.toString().toLowerCase().equals("chicken pox")){
+                imgDisease1.setImageResource(R.drawable.measles2);
+                imgDisease1.setImageResource(R.drawable.measles3);
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("chicken pox")){
                 imgDisease1.setImageResource(R.drawable.chickenpox1);
-                imgDisease2.setImageResource(R.drawable.chickenpox2);
-                imgDisease3.setImageResource(R.drawable.chickenpox3);
-            } else if (itemTitle.toString().toLowerCase().equals("burn")){
+                imgDisease1.setImageResource(R.drawable.chickenpox2);
+                imgDisease1.setImageResource(R.drawable.chickenpox3);
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("burn")){
                 imgDisease1.setImageResource(R.drawable.burn1);
-                imgDisease2.setImageResource(R.drawable.burn2);
-                imgDisease3.setImageResource(R.drawable.burn3);
-            } else if (itemTitle.toString().toLowerCase().equals("scabies (“galis aso”)")){
+                imgDisease1.setImageResource(R.drawable.burn2);
+                imgDisease1.setImageResource(R.drawable.burn3);
+            }
+
+            else if (txtCheck.getText().toString().toLowerCase().equals("scabies (“galis aso”)")){
                 imgDisease1.setImageResource(R.drawable.scabies1);
-                imgDisease2.setImageResource(R.drawable.scabies2);
-                imgDisease3.setImageResource(R.drawable.scabies3);
+                imgDisease1.setImageResource(R.drawable.scabies2);
+                imgDisease1.setImageResource(R.drawable.scabies3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("abscess")){
+                imgDisease1.setImageResource(R.drawable.abscess1);
+                imgDisease1.setImageResource(R.drawable.abscess2);
+                imgDisease1.setImageResource(R.drawable.abscess3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("alopecia areata")){
+                imgDisease1.setImageResource(R.drawable.alopecia1);
+                imgDisease1.setImageResource(R.drawable.alopecia2);
+                imgDisease1.setImageResource(R.drawable.alopecia3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("basal cell carcinoma")){
+                imgDisease1.setImageResource(R.drawable.basal1);
+                imgDisease1.setImageResource(R.drawable.basal2);
+                imgDisease1.setImageResource(R.drawable.basal3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("bowen's disease")){
+                imgDisease1.setImageResource(R.drawable.bowen1);
+                imgDisease1.setImageResource(R.drawable.bowen2);
+                imgDisease1.setImageResource(R.drawable.bowen3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("darier's disease")){
+                imgDisease1.setImageResource(R.drawable.darier1);
+                imgDisease1.setImageResource(R.drawable.darier2);
+                imgDisease1.setImageResource(R.drawable.darier3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("disseminated superficial actinic porokeratosis")){
+                imgDisease1.setImageResource(R.drawable.disseminated1);
+                imgDisease1.setImageResource(R.drawable.disseminated2);
+                imgDisease1.setImageResource(R.drawable.disseminated3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("dystrophic epidermolysis bullosa (deb)")){
+                imgDisease1.setImageResource(R.drawable.dystrophic1);
+                imgDisease1.setImageResource(R.drawable.dystrophic2);
+                imgDisease1.setImageResource(R.drawable.dystrophic3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("fungal infection of the nails")){
+                imgDisease1.setImageResource(R.drawable.fungal1);
+                imgDisease1.setImageResource(R.drawable.fungal2);
+                imgDisease1.setImageResource(R.drawable.fungal3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("hives")){
+                imgDisease1.setImageResource(R.drawable.hives1);
+                imgDisease1.setImageResource(R.drawable.hives2);
+                imgDisease1.setImageResource(R.drawable.hives3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("hyperhidrosis")){
+                imgDisease1.setImageResource(R.drawable.hyperdrosis1);
+                imgDisease1.setImageResource(R.drawable.hyperdrosis2);
+                imgDisease1.setImageResource(R.drawable.hyperdrosis3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("ichthyosis")){
+                imgDisease1.setImageResource(R.drawable.ichthyosis1);
+                imgDisease1.setImageResource(R.drawable.ichthyosis2);
+                imgDisease1.setImageResource(R.drawable.ichthyosis3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("impetigo")){
+                imgDisease1.setImageResource(R.drawable.impetigo1);
+                imgDisease1.setImageResource(R.drawable.impetigo2);
+                imgDisease1.setImageResource(R.drawable.impetigo3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("lichen sclerosus")){
+                imgDisease1.setImageResource(R.drawable.lichen1);
+                imgDisease1.setImageResource(R.drawable.lichen2);
+                imgDisease1.setImageResource(R.drawable.lichen3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("pemphigus vulgaris")){
+                imgDisease1.setImageResource(R.drawable.pemphigus1);
+                imgDisease1.setImageResource(R.drawable.pemphigus2);
+                imgDisease1.setImageResource(R.drawable.pemphigus3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("psoriasis")){
+                imgDisease1.setImageResource(R.drawable.psoriasis1);
+                imgDisease1.setImageResource(R.drawable.psoriasis2);
+                imgDisease1.setImageResource(R.drawable.psoriasis3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("rosacea")){
+                imgDisease1.setImageResource(R.drawable.rosacea1);
+                imgDisease1.setImageResource(R.drawable.rosacea2);
+                imgDisease1.setImageResource(R.drawable.rosacea3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("sweet's syndrome")){
+                imgDisease1.setImageResource(R.drawable.sweet1);
+                imgDisease1.setImageResource(R.drawable.sweet2);
+                imgDisease1.setImageResource(R.drawable.sweet3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("underarm or body odor")){
+                imgDisease1.setImageResource(R.drawable.underarm1);
+                imgDisease1.setImageResource(R.drawable.underarm2);
+                imgDisease1.setImageResource(R.drawable.underarm3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("vitiligo")){
+                imgDisease1.setImageResource(R.drawable.vitiligo1);
+                imgDisease1.setImageResource(R.drawable.vitiligo2);
+                imgDisease1.setImageResource(R.drawable.vitiligo3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("warts")){
+                imgDisease1.setImageResource(R.drawable.warts1);
+                imgDisease1.setImageResource(R.drawable.warts2);
+                imgDisease1.setImageResource(R.drawable.warts3);
+            }
+            else if (txtCheck.getText().toString().toLowerCase().equals("xeroderma pigmentosum (xp).")){
+                imgDisease1.setImageResource(R.drawable.xeroderma1);
+                imgDisease1.setImageResource(R.drawable.xeroderma2);
+                imgDisease1.setImageResource(R.drawable.xeroderma3);
             }
         }
 

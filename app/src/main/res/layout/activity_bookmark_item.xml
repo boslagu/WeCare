@@ -51,22 +51,19 @@
                             android:id="@+id/imgDisease1"
                             android:layout_width="360dp"
                             android:layout_height="250dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/boarderabout" />
+                            android:layout_weight="1" />
 
                         <ImageView
                             android:id="@+id/imgDisease2"
                             android:layout_width="360dp"
                             android:layout_height="250dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/boarderabout" />
+                            android:layout_weight="1" />
 
                         <ImageView
                             android:id="@+id/imgDisease3"
                             android:layout_width="360dp"
                             android:layout_height="250dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/boarderabout" />
+                            android:layout_weight="1" />
 
                     </LinearLayout>
 
